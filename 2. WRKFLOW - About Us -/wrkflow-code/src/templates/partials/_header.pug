@@ -1,0 +1,17 @@
+header.header.js-header
+	.header__center.center
+		a.header__logo(href="#")
+			img.header__pic.header__pic_dark(src="img/logo-dark.svg" alt="")
+			img.header__pic.header__pic_white(src="img/logo-white.svg" alt="")
+		.header__wrap.js-header-wrap
+			nav.header__nav
+				a.header__link.js-popup-open(href="#popup-pricing" data-effect="mfp-zoom-in") Pricing
+				a.header__link.js-popup-open(href="#popup-work" data-effect="mfp-zoom-in") How it Works
+				a.header__link.js-popup-open(href="#popup-faq" data-effect="mfp-zoom-in") FAQ
+			.header__control
+				a.header__login.js-popup-open(href="#popup-sign-up" data-effect="mfp-zoom-in")
+					span.header__text Sign In
+					+i('arrow-right')
+				a.header__btn.btn.btn_purple.js-popup-open(href="#popup-pricing" data-effect="mfp-zoom-in") Get Started
+		button.header__burger.js-header-burger
+

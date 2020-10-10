@@ -1,0 +1,31 @@
+footer.footer
+	.footer__center.center
+		.footer__row
+			.footer__col
+				a.footer__logo(href="#")
+					img.footer__pic.footer__pic_dark(src="img/logo-dark.svg" alt="")
+					img.footer__pic.footer__pic_white(src="img/logo-white.svg" alt="")
+				label.switch.switch_img.js-switch-bg
+					input.switch__input(type="checkbox")
+					span.switch__in
+						span.switch__box
+						span.switch__preview
+							img.switch__pic.switch__pic_moon(src="img/moon.svg" alt="")
+							img.switch__pic.switch__pic_sun(src="img/sun.svg" alt="")
+			.footer__col
+				.footer__menu
+					a.footer__link.js-popup-open(href="#popup-pricing" data-effect="mfp-zoom-in") Pricing
+					a.footer__link.js-popup-open(href="#popup-work" data-effect="mfp-zoom-in") How it Works
+					a.footer__link.js-popup-open(href="#popup-faq" data-effect="mfp-zoom-in") FAQ
+			.footer__col
+				.footer__menu
+					a.footer__link(href="#") Terms of Service
+					a.footer__link(href="#") Privacy Policy
+			.footer__col
+				.footer__social.social
+					a.social__link(href="#")
+						+i('instagram')
+					a.social__link(href="#")
+						+i('twitter')
+					a.social__link(href="#")
+						+i('facebook')

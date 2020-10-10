@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/bites-theme.css" />
+    <link rel="stylesheet" href="css/custom-style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="page-template-documentation">
+    <header id="masthead" class="site-header mb-0" role="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div class="navbar-brand mb-0">
+                    <a class="custom-logo-link" href="index.html"> <img src="images/logo-black.png" srcset="images/logo-black@2x.png 2x" class="custom-logo"> </a>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul id="menu-main-menu" class="navbar-nav ml-auto">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item active"><a href="documentation.html" class="nav-link">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row">
+                <div id="sticky-anchor"></div>
+                <div class="col-lg-2 documentation-sidebar">
+                    <ul id="sticky" class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quick-start">Quick Start</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#css-section">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#js-section">JS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bites-installation">Installation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#how-to-launch">How to Launch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ainimation-section">Animation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#location-section">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#options-section">Options</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 text-white">
+                    <div class="documentation-title">
+                        <h1>Installing Guidelines</h1>
+                        <p class="mb-0">The components installation guidelines and best practices for your developers team.</p>
+                    </div>
+
+                    <section id="quick-start" class="documentation-section">
+                        <h2 class="section-title">Quick start</h2>
+                        <p>Install the folder "bites" from the archive <span class="code">bite.zip</span> to your website root directory and choose the bite needed from the list on <a href="index.html" class="btn-link link-documentation" target="_blank">Home Page</a> and insert it to the code in web-document and css file.</p> 
+                    </section>
+
+                    <section id="css-section" class="documentation-section">
+                        <h2 class="section-title">CSS</h2>
+                        <p>Install following components to <span class="code">&lt;head&gt;</span> of your web-document.</p>
+                        <div class="clipboard-block position-relative">
+                            <button class="btn btn-clipboard" data-clipboard-target="#copy-head">Copy</button>
+<pre id="copy-head">
+&lt;!-- Fonts --&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet" /&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet" /&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" /&gt;
+
+&lt;!-- Animate CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" /&gt;
+
+&lt;!-- Bites Theme CSS --&gt;
+&lt;link rel="stylesheet" href="bites/css/bites-theme.css" /&gt;</pre>
+                        </div>
+                        <p>Path to the css file, if your website is on Wordpress CMS</p>
+                        <div class="clipboard-block position-relative">
+                            <button class="btn btn-clipboard" data-clipboard-target="#copy-head-wordpress">Copy</button>
+<pre id="copy-head-wordpress">&lt;!-- Bites Theme CSS --&gt;
+&lt;link rel="stylesheet" href="&lt;?php echo get_template_directory_uri(); ?&gt;/bites/css/bites-theme.css" /&gt;</pre>
+                        </div>
+                    </section>
+
+                    <section id="js-section" class="documentation-section">
+                        <h2 class="section-title">JS</h2>
+                        <p>Put the following components before the closing <span class="code">&lt;/body&gt;</span> of your web-document.</p>
+                        <div class="clipboard-block position-relative">
+                            <button class="btn btn-clipboard" data-clipboard-target="#copy-jQery">Copy</button>
+<pre id="copy-jQery">&lt;!-- jQery JS library v.3.3.1 minified --&gt;                   
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;</pre>
+                        </div>
+                        <div class="clipboard-block position-relative">                    
+                            <button class="btn btn-clipboard" data-clipboard-target="#copy-script">Copy</button>
+<pre id="copy-script">&lt;!-- Bootstrap Bundle JS v.4.3.1 minified --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Bites JS --&gt;
+&lt;script type="text/javascript" src="bites/js/bites.js"&gt;&lt;/script&gt;</pre>
+                        </div>
+                        <p>Path to the JS files, if your website is on Wordpress CMS</p>
+                        <div class="clipboard-block position-relative">
+                            <button class="btn btn-clipboard" data-clipboard-target="#copy-script-wordpress">Copy</button>
+<pre id="copy-script-wordpress">
+&lt;!-- Bites JS --&gt;
+&lt;script type="text/javascript" src="&lt;?php echo get_template_directory_uri(); ?&gt;/bites/js/bites.js"&gt;&lt;/script&gt;</pre>
+                        </div>
+                    </section>
+
+                    <section id="bites-installation" class="documentation-section">
+                        <h2 class="section-title">Bites Installation (example)</h2>
+                        <p>The bite is puting inside <span class="code">&lt;body&gt;</span></p>
+                        <div class="clipboard-block position-relative">
+                        <button class="btn btn-clipboard" data-clipboard-target="#copy-code">Copy</button>
+<pre id="copy-code">
+&lt;!-- The Modal --&gt;
+&lt;div class="modal fade <span class="code">timeoutshow<span style="color: red">*</span></span> m-width-570" <span class="code">bite-timeout="0"<span style="color: red">*</span></span> id="bite-1" bite-show="fadeIn" bite-hide="fadeOut"&gt;
+&nbsp; &nbsp; &lt;div class="modal-dialog animated fast"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="modal-content text-center"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Modal header --&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="modal-header"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type="button" class="close close-light" data-dismiss="modal"&gt;&lt;/button&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Modal body --&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="modal-body"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&lt;/div&gt;</pre>
+                        </div>
+                        <p>Here you can see this bite work demonstration: <button type="button" class="btn btn-demonstration text-white ml-2" data-toggle="modal" data-target="#bite-demo-fade">Demo</button></p>
+                        <p><span style="color: red">*</span> - <span class="code">timeoutshow</span> and <span class="code">bite-timeout="0"</span> required for the test demonstration of the bite on your website</p>
+                        <p>If your website is on Wordpress CMS, then the path to the image in bite looks like this:</p>
+                        <div class="clipboard-block position-relative">
+<pre>
+&lt;img src="<span class="code">&lt;?php echo get_template_directory_uri(); ?&gt;</span>/bites/images/logo.png" srcset="<span class="code">&lt;?php echo get_template_directory_uri(); ?&gt;</span>/bites/images/logo@2x.png 2x" alt="" /&gt;</pre>
+                        </div>
+                        <p>Or:</p>
+                        <div class="clipboard-block position-relative">
+<pre>
+&lt;img src="/wp-content/themes/<span class="code">your-theme</span>/bites/images/logo.png" srcset="/wp-content/themes/<span class="code">your-theme</span>/bites/images/logo@2x.png 2x" alt="" /&gt;</pre>
+                        </div>
+                        <p>Where <span class="code">your-theme</span> is theme installed in Wordpress</p>
+                    </section>
+
+                    <section id="how-to-launch" class="documentation-section">
+                        <h2 class="section-title">How you can launch the bite</h2>
+                        <p>The bite can be launched for the different reasons (these are triggers). It depends on your purposes. </p>
+                        <h3>Launching after some time <button type="button" class="btn btn-demonstration text-white btn-timeoutshow ml-2">Demo</button></h3>
+<pre>
+&lt;div class="modal fade <span class="code">timeoutshow</span> m-width-570" id="bite-demo-timeoutshow" <span class="code">bite-timeout="10"</span> bite-show="fadeIn" bite-hide="fadeOut"&gt;...&lt;/div&gt;</pre>
+                        <p>To be launched your bite need to include <span class="code">timeoutshow</span> class and attribute <span class="code">bite-timeout="10"</span> You can see the example above. Launching time is calculated in seconds.</p>
+                        <p>This is important: the bite is launching one time during the session.</p>
+                        <h3>Launching when button was pressed <button type="button" class="btn btn-demonstration text-white ml-2" data-toggle="modal" data-target="#bite-demo-fade">Demo</button></h3>
+<pre>
+&lt;!-- Button trigger modal --&gt;
+&lt;button type="button" class="btn btn-demonstration text-white" data-toggle="modal" data-target="#<span class="code">bite-demo</span>"&gt;Demo&lt;/button&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+&lt;!-- Bite modal --&gt;
+&lt;div class="modal fade m-width-570" id="<span class="code">bite-demo</span>" bite-show="fadeIn" bite-hide="fadeOut"&gt;...&lt;/div&gt;</pre>
+                        <p>This is important: <span class="code">data-target</span> attributes of the button and popup <span class="code">id</span> need to be equal.</p>
+                        <h3>Launching after several clicks were made in the document area <button type="button" class="btn btn-demonstration text-white btn-fewclicksmodal ml-2">Demo</button></h3>
+<pre>
+&lt;div class="modal fade <span class="code">fewclicksmodal</span> m-width-570" id="bite-demo-fewclicksmodal" bite-show="fadeIn" bite-hide="fadeOut"&gt;...&lt;/div&gt;</pre>
+                        <p>To be launched your bite need to include <span class="code">fewclicksmodal</span> class.</p>
+                        <p>This is important: the bite is launching one time during the session.</p>
+                        <h3>Launching when user is trying to close the document <button type="button" class="btn btn-demonstration text-white btn-closedoc ml-2">Demo</button></h3>
+<pre>
+&lt;div class="modal fade <span class="code">closedoc</span> m-width-570" id="bite-demo-closedoc" bite-show="fadeIn" bite-hide="fadeOut"&gt;...&lt;/div&gt;</pre>
+                        <p>To be launched your bite need to include <span class="code">closedoc</span> class.</p>
+                        <p>This is important: the bite is launching one time during the session.</p>
+                        <h3>Launching when scrolling the document <button type="button" class="btn btn-demonstration text-white btn-scrollshow ml-2">Demo</button></h3>
+<pre>
+&lt;div class="modal fade <span class="code">scrollshow</span> m-width-570" id="bite-demo-scrollshow" bite-show="fadeIn" bite-hide="fadeOut" <span class="code">displayed="false"</span>&gt;...&lt;/div&gt;</pre>
+                        <p>To be launched your bite need to include <span class="code">scrollshow</span> class and <span class="code">displayed="false"</span> attribute. You can see the example above. After that you need to set up the point where bite is going to be launched: put the html-tag with <span class="code">scrollshowpoint</span> class to the place needed or add the <span class="code">scrollshowpoint</span> class to the existing html-tag. When user is scrolling to this html-tag, the bite is launching.</p>
+                        <p>This is important: the bite is launching one time during the session.</p>
+                    </section>
+
+                    <section id="ainimation-section" class="documentation-section">
+                        <h2 class="section-title">Animation</h2>
+                        <p>You can set up the launcind and closing animation of the bite.</p>
+<pre class="code-btn-inner">&lt;div class="modal fade m-width-570" id="bite-demo" <span class="code">bite-show="<span class="seleted-anim-show">fadeIn</span>"</span> <span class="code">bite-hide="<span class="seleted-anim-hide">fadeOut</span>"</span>&gt;...&lt;/div&gt;</pre>
+                        <p>This function is proceeded by changing the bite-show and bite-hide attributes <span class="code">bite-show</span> и <span class="code">bite-hide</span></p>
+                        <h3>Animation work's examples</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <form class="form-inline">
+                                    <select id="select-anim" class="form-control w-100">
+                                        <option value="fade" bite-show="fadeIn" bite-hide="fadeOut">Fade</option>
+                                        <option value="zoom" bite-show="zoomIn" bite-hide="zoomOut">Zoom</option>
+                                        <option value="bounce" bite-show="bounceIn" bite-hide="bounceOut">Bounce</option>
+                                        <option value="slide-up" bite-show="slideInDown" bite-hide="slideOutUp">Slide Up</option>
+                                        <option value="slide-down" bite-show="slideInUp" bite-hide="slideOutDown">Slide Down</option>
+                                        <option value="slide-right" bite-show="slideInRight" bite-hide="slideOutRight">Slide Right</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-md-3 demo-btn-anim">
+                                <button type="button" class="btn btn-block btn-demonstration text-white" data-toggle="modal" data-target="#bite-demo-fade">Fade</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="code-btn-inner"><p class="mb-0"><span class="code">bite-show="<span class="seleted-anim-show">fadeIn</span>"</span> <span class="code">bite-hide="<span class="seleted-anim-hide">fadeOut</span>"</span></p></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="location-section" class="documentation-section">
+                        <h2 class="section-title">Location</h2>
+                        <p>There are 9 positions you can use to locate the bite (Default location: Top Center)</p>
+<pre class="code-btn-inner">&lt;div class="modal fade <strong class="code">position-<span class="seleted-location-class">top-left</span></strong> m-width-570" id="bite-demo" bite-show="fadeIn" bite-hide="fadeOut"&gt;...&lt;/div&gt;</pre>
+                        <p>Add following classes to the bite</p>
+                        <h3>Working examples</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <form class="form-inline">
+                                    <select class="form-control w-100" id="select-location">
+                                        <option value="top-left">Top Left</option>
+                                        <option value="top-center">Top Center</option>
+                                        <option value="top-right">Top Right</option>
+                                        <option value="center-left">Center Left</option>
+                                        <option value="center-center">Center Center</option>
+                                        <option value="center-right">Center Righr</option>
+                                        <option value="bottom-left">Bottom Left</option>
+                                        <option value="bottom-center">Bottom Center</option>
+                                        <option value="bottom-right">Bottom Right</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-md-3 demo-btn-location">
+                                <button type="button" class="btn btn-block btn-demonstration text-white mb-3" data-toggle="modal" data-target="#bite-demo-top-left">Top Left</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="code-btn-inner">
+                                    <p class="mb-0">Location class: <strong class="code">position-<span class="seleted-location-class">top-left</span></strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="options-section" class="documentation-section">
+                        <h2 class="section-title">Options</h2>
+                        <p>You can use backdrop option to switch on or switch off the background (it is switched on by default: <span class="code">data-backdrop="true"</span>)</p>
+<pre>
+&lt;div class="modal fade m-width-570" id="bite-demo" <span class="code">data-backdrop="false"</span> bite-show="fadeIn" bite-hide="fadeOut"&gt;...&lt;/div&gt;</pre>
+                        <h3>Working examples <button type="button" class="btn btn-demonstration text-white ml-2" data-toggle="modal" data-target="#bite-demo-backdrop">Demo</button></h3>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade m-width-570 bite-demo" id="bite-demo-fade" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade fewclicksmodal m-width-570 bite-demo" id="bite-demo-fewclicksmodal" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade closedoc m-width-570 bite-demo" id="bite-demo-closedoc" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade scrollshow m-width-570 bite-demo" id="bite-demo-scrollshow" bite-show="fadeIn" bite-hide="fadeOut" displayed="false">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade timeoutshow m-width-570 bite-demo" id="bite-demo-timeoutshow" bite-timeout="10" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade m-width-570 bite-demo" id="bite-demo-zoom" bite-show="zoomIn" bite-hide="zoomOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade m-width-570 bite-demo" id="bite-demo-bounce" bite-show="bounceIn" bite-hide="bounceOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade m-width-570 bite-demo" id="bite-demo-slide-up" bite-show="slideInDown" bite-hide="slideOutUp">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-bottom-center m-width-570 bite-demo" id="bite-demo-slide-down" bite-show="slideInUp" bite-hide="slideOutDown">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-center-right m-width-570 bite-demo" id="bite-demo-slide-right" bite-show="slideInRight" bite-hide="slideOutRight">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-top-left m-width-570 bite-demo" id="bite-demo-top-left" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-top-right m-width-570 bite-demo" id="bite-demo-top-right" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-center-left m-width-570 bite-demo" id="bite-demo-center-left" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-center-center m-width-570 bite-demo" id="bite-demo-center-center" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-center-right m-width-570 bite-demo" id="bite-demo-center-right" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-bottom-left m-width-570 bite-demo" id="bite-demo-bottom-left" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-bottom-center m-width-570 bite-demo" id="bite-demo-bottom-center" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade position-bottom-right m-width-570 bite-demo" id="bite-demo-bottom-right" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade m-width-570 bite-demo" data-backdrop="false" id="bite-demo-backdrop" bite-show="fadeIn" bite-hide="fadeOut">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <button type="button" class="close close-light" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="popup-title text-white">Subscribe Our News</div>
+
+                        <p class="popup-text text-white">Subscribe and receive our newsletters to follow the<br> news about our fresh and fantastic products</p>
+
+                        <form class="form-subscribe form-inline justify-content-center">
+                            <div class="form-group mr-3">
+                                <input type="text" class="form-control email-address b-radius-30" placeholder="Enter your email" />
+                            </div>
+                            <button type="submit" class="btn text-white b-radius-30"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="demo-fewclicksmodal" class="demo-wrapper animated">
+            <div class="container">
+                <div class="row align-items-center">
+                    <button type="button" id="demo-fewclicksmodal-close" class="demo-wrapper-close close-light"></button>
+                    <div class="col text-center text-white py-5">
+                      Make several clicks on the document area
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="demo-closedoc" class="demo-wrapper animated">
+            <div class="container">
+                <div class="row align-items-center">
+                    <button type="button" id="demo-closedoc-close" class="demo-wrapper-close close-light"></button>
+                    <div class="col text-center text-white py-5">
+                      Try to close browser window
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="demo-scrollshow" class="demo-wrapper animated">
+            <div class="demo-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <button type="button" id="demo-scrollshow-close" class="demo-wrapper-close close-light"></button>
+                        <div class="col text-center text-white py-5">
+                          Scroll the page down
+                        </div>
+                      </div>
+                </div>
+                <div class="scrollshowpoint"></div>
+                <div style="height: 300px;"></div>
+            </div>
+        </div>
+
+        <div id="demo-timeoutshow" class="demo-wrapper animated">
+            <div class="container">
+                <div class="row align-items-center">
+                    <button type="button" id="demo-timeoutshow-close" class="demo-wrapper-close close-light"></button>
+                    <div class="col text-center text-white py-5">
+                      Wait several seconds
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            jQuery(function($) {
+                function sticky_relocate() {
+                    var window_top = $(window).scrollTop(),
+                        footer_top = $("#colophon").offset().top,
+                        div_top = $('#sticky-anchor').offset().top,
+                        div_height = $("#sticky").height(),
+                        padding = 20; 
+
+                    if (window_top + div_height > footer_top - padding - 46) {
+                        $('#sticky').stop().animate({top: window_top - div_top + padding});
+                        $('#sticky').addClass('stick-fix');
+
+                    } else if (window_top > div_top && window_top + div_height < footer_top - padding) {
+                        $('#sticky').stop().animate({top: window_top - div_top + padding});
+                        $('#sticky').addClass('stick');
+                        $('#sticky').removeClass('stick-fix');
+                    } else {
+                        $('#sticky').stop().animate({top: 0});
+                        $('#sticky').removeClass('stick');
+                        $('#sticky').removeClass('stick-fix');
+                    }
+                }
+
+                $(window).scroll(sticky_relocate);
+                sticky_relocate();
+
+                $('body').scrollspy({target: "#sticky", offset: 50}); 
+                $("#sticky a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+    
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="container footer-bottom">
+                <nav class="navbar navbar-expand-lg" role="navigation"> <span>Copyright © 2019 Craftwork. All Rights Reserved.</span>
+                    <ul class="nav navbar-nav ml-lg-auto footer-menu">
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="https://twitter.com/GetCraftwork"><i class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.instagram.com/getcraftwork/"><i class="fab fa-instagram"></i></a></li>
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.behance.net/getcraftwork"><i class="fab fa-behance"></i></a></li>
+                        <li class="nav-item"><a target="_blank" class="nav-link" href="https://dribbble.com/Craftwork"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/viewportchecker.js"></script>
+    <script type="text/javascript" src="js/ouibounce.js"></script>
+    <script type="text/javascript" src="js/custom-scripts.js"></script>
+</body>
+
+</html>
