@@ -1,116 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Privacy</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#fff">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Page description">
-    <!--Twitter Card data-->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@publisher_handle">
-    <meta name="twitter:title" content="Page Title">
-    <meta name="twitter:description" content="Page description less than 200 characters">
-    <meta name="twitter:creator" content="@author_handle">
-    <meta name="twitter:image" content="http://www.example.com/image.jpg">
-    <!--Open Graph data-->
-    <meta property="og:title" content="Title Here">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://www.example.com/">
-    <meta property="og:image" content="http://example.com/image.jpg">
-    <meta property="og:description" content="Description Here">
-    <meta property="og:site_name" content="Site Name, i.e. Moz">
-    <meta property="fb:admins" content="Facebook numeric ID">
-    <link rel="stylesheet" media="all" href="assets/privacy/css/app.css">
-    <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
-if (viewportmeta) {
-  if (screen.width < 375) {
-    var newScale = screen.width / 375;
-    viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
-  } else {
-    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-  }
-}</script>
-  </head>
-  <body>
-    <div class="page">
-      <header class="header js-header">
-        <div class="header__center center"><a class="header__logo" href="#"><img class="header__pic header__pic_dark" src="assets/privacy/img/logo-dark.svg" alt=""><img class="header__pic header__pic_white" src="assets/privacy/img/logo-white.svg" alt=""></a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Privacy</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#fff">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Page description">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon.png">
+  <!--Twitter Card data-->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@publisher_handle">
+  <meta name="twitter:title" content="Page Title">
+  <meta name="twitter:description" content="Page description less than 200 characters">
+  <meta name="twitter:creator" content="@author_handle">
+  <meta name="twitter:image" content="http://www.example.com/image.jpg">
+  <!--Open Graph data-->
+  <meta property="og:title" content="Title Here">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.example.com/">
+  <meta property="og:image" content="http://example.com/image.jpg">
+  <meta property="og:description" content="Description Here">
+  <meta property="og:site_name" content="Site Name, i.e. Moz">
+  <meta property="fb:admins" content="Facebook numeric ID">
+  <link rel="stylesheet" media="all" href="assets/privacy/css/app.css">
+  <link rel="stylesheet" media="all" href="assets/img/heafoo.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="main__page">
+      <header class="header js-header" id="header">
+        <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
+            class="header__logo" href="#"><img class="header__pic" src="assets/img/logo-black.svg" alt=""></a>
           <div class="header__wrap js-header-wrap">
-            <nav class="header__nav"><a class="header__link js-popup-open" href="#popup-pricing" data-effect="mfp-zoom-in">Pricing</a><a class="header__link js-popup-open" href="#popup-work" data-effect="mfp-zoom-in">How it Works</a><a class="header__link js-popup-open" href="#popup-faq" data-effect="mfp-zoom-in">FAQ</a></nav>
-            <div class="header__control"><a class="header__login js-popup-open" href="#popup-sign-up" data-effect="mfp-zoom-in"><span class="header__text">Sign In</span><svg class="icon icon-arrow-right">
-                  <use xlink:href="assets/privacy/img/sprite.svg#icon-arrow-right"></use>
-                </svg></a><a class="header__btn btn btn_purple js-popup-open" href="#popup-pricing" data-effect="mfp-zoom-in">Get Started</a></div>
-          </div><button class="header__burger js-header-burger"></button>
+            <nav class="header__nav">
+              <a class="header__item" href="index.html">Home</a>
+              <a class="header__item" href="about-us.html">About Us</a>
+              <a class="header__item" href="pricing.html">Pricing</a>
+              <a class="header__item" href="contact-us.html">Contact Us</a>
+            </nav>
+            <div class="header__photo"><img class="header__pic" src="assets/landing-page/img/menu-pic.png" alt="">
+            </div>
+          </div><a class="header__btn btn__header btn_pink" href="login.html">Login / Sign up</a>
         </div>
+        <div class="header__bg js-header-bg"></div>
       </header>
       <div class="popup popup_big">
         <div class="accord accord_faq js-accord">
-          <h2 class="accord__title title">Frequently Asked Questions</h2>
-            <div class="accord__item js-accord-item active">
-              <div class="accord__head js-accord-head">1. Do you have a free plan that I would be able to use forever?</div>
-              <div class="accord__body js-accord-body" style="display: block;">Yes, we do offer a free plan that anyone who is interested in our service can use absolutely for free and it will always be like that, no matter what.</div>
+          <h2 class="accord__title title">Kebijakan Privasi</h2>
+          <p class="accord__info">
+            Kebijakan Privasi ini menjelaskan bagaimana Jasa Tugas, ("Jasa Tugas", "kami", "kami", "milik kami")
+            mengumpulkan, menggunakan, dan berbagi informasi sehubungan dengan penggunaan Anda atas situs web kami
+            (termasuk www.jasatugas.co.id), layanan , produk dan aplikasi (secara kolektif disebut "Layanan"). Kebijakan
+            Privasi ini ("Kebijakan Privasi") tidak berlaku untuk informasi yang mungkin diproses pelanggan kami saat
+            menggunakan Layanan. <br><br>
+            Kami dapat mengumpulkan dan menerima informasi tentang pengguna Layanan kami ("pengguna", "Anda", "milik
+            Anda") dari berbagai sumber, termasuk: (i) informasi yang Anda berikan melalui akun pengguna Anda di Layanan
+            ("Akun" Anda) jika Anda mendaftar ke Layanan; (ii) penggunaan Anda atas Layanan; dan (iii) dari situs web,
+            layanan, dan mitra pihak ketiga. <br><br>
+            Kami menyarankan Anda membaca Kebijakan Privasi ini sepenuhnya untuk memastikan Anda mendapat informasi
+            lengkap. Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini atau praktik pengumpulan, penggunaan,
+            dan
+            pengungkapan data Jasa Tugas, silakan hubungi kami di tugas@jasatugas.co.id. <br><br>
+          </p>
+          <div class="accord__item js-accord-item active">
+            <div class="accord__head js-accord-head">Informasi apa yang kami kumpulkan?</div>
+            <div class="accord__body js-accord-body" style="display: block;">
+              <div class="js-accord-item">
+                <div class="accord__item__item js-accord-item-item">
+                  <div class="accord__item__head js-accord-item-head">1. Informasi yang Anda berikan:</div>
+                  <div class="accord__item__body js-accord-item-body">
+                    <ul style="padding-left: 24px;">
+                      <li>Pendaftaran akun. Saat Anda mendaftarkan Akun, kami dapat meminta informasi kontak Anda,
+                        termasuk item seperti nama, nama perusahaan, alamat, alamat email, dan nomor telepon. Jika
+                        Anda
+                        memilih untuk merujuk teman ke Layanan kami, kami juga dapat mengumpulkan alamat email teman
+                        Anda sehingga kami dapat mengirimkan mereka referensi atau kode promosi untuk mendaftar ke
+                        Layanan kami.</li>
+                      <li>Komunikasi. Jika Anda menghubungi kami secara langsung, kami mungkin menerima informasi
+                        tambahan tentang Anda seperti nama, alamat email, nomor telepon, isi pesan dan / atau lampiran
+                        yang mungkin Anda kirimkan kepada kami, dan informasi lain yang mungkin Anda pilih untuk
+                        diberikan. Kami mungkin juga menerima konfirmasi saat Anda membuka email dari kami.</li>
+                    </ul>
+                    Informasi pribadi yang diminta untuk Anda berikan, dan alasan mengapa Anda diminta untuk
+                    memberikannya,
+                    akan dijelaskan kepada Anda pada saat kami meminta Anda untuk memberikan informasi pribadi Anda.
+                  </div>
+                </div>
+                <div class="accord__item__item js-accord-item-item">
+                  <div class="accord__item__head js-accord-item-head">2.Informasi yang kami kumpulkan saat Anda
+                    menggunakan Layanan kami:</div>
+                  <div class="accord__item__body js-accord-item-body">
+                    <ul style="padding-left: 24px;">
+                      <li>Cookie dan data pelacakan lainnya. Seperti kebanyakan situs web, kami mengumpulkan informasi
+                        tertentu secara otomatis dari perangkat Anda. Informasi ini mungkin termasuk alamat IP, lokasi
+                        geografis, jenis browser, sistem operasi, cap tanggal / waktu dan URL rujukan. Untuk
+                        mengumpulkan
+                        informasi ini, cookie dapat dipasang di komputer atau perangkat Anda saat Anda mengunjungi
+                        Layanan
+                        kami. Cookies berisi sejumlah kecil informasi yang memungkinkan server web kami mengenali Anda.
+                        Kami menyimpan informasi yang kami kumpulkan melalui cookie untuk mencatat preferensi Anda. Kami
+                        juga dapat secara otomatis mengumpulkan informasi tentang penggunaan Anda atas fitur Layanan
+                        kami,
+                        tentang fungsionalitas Layanan kami, frekuensi kunjungan, dan informasi lain yang terkait dengan
+                        interaksi Anda dengan Layanan. Kami dapat melacak penggunaan Anda di berbagai situs web dan
+                        layanan.</li>
+                      <li>Data pelanggan Anda. Untuk menyediakan Layanan, kami mengumpulkan dan memproses secara ketat
+                        atas nama pengguna kami beberapa informasi tentang pelanggan mereka secara langsung atau tidak
+                        langsung menggunakan Layanan kami. Informasi ini mungkin termasuk alamat IP, lokasi geografis,
+                        jenis browser, sistem operasi, cap tanggal / waktu dan URL rujukan. Untuk mengumpulkan informasi
+                        ini, cookie dapat dipasang di komputer mereka.</li>
+                      <li>Riwayat obrolan. Untuk menyediakan Layanan, kami menyimpan semua riwayat obrolan dan informasi
+                        pelanggan terkait yang sebelumnya tidak dihapus oleh pengguna kami atau oleh Jasa Tugas sesuai
+                        dengan permintaan pengguna. Informasi ini mungkin termasuk email, nomor telepon, nama dan apapun
+                        yang dikirim melalui formulir obrolan kami atau sebagai bagian dari pesan obrolan.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accord__item__item js-accord-item-item">
+                  <div class="accord__item__head js-accord-item-head">3. Informasi yang kami terima dari pihak ketiga:
+                  </div>
+                  <div class="accord__item__body js-accord-item-body">
+                    <ul style="padding-left: 24px;">
+                      <li>Akun pihak ketiga. Jika Anda memilih untuk menautkan Layanan kami ke akun pihak ketiga, kami
+                        akan menerima informasi tentang akun tersebut, seperti token autentikasi Anda dari akun pihak
+                        ketiga, untuk mengotorisasi penautan. Jika Anda ingin membatasi informasi yang tersedia bagi
+                        kami,
+                        Anda harus mengunjungi pengaturan privasi akun pihak ketiga Anda untuk mempelajari tentang
+                        pilihan
+                        Anda.</li>
+                      <li>Mitra pihak ketiga. Kami juga dapat menerima informasi yang tersedia untuk umum tentang Anda
+                        dari mitra pihak ketiga kami dan menggabungkannya dengan data yang kami miliki tentang Anda.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">2. Can we cancel our subscription at any time?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">Bagaimana kami menggunakan informasi?</div>
+            <div class="accord__body js-accord-body">
+              Kami menggunakan informasi yang kami kumpulkan dengan berbagai cara, termasuk:
+              <ol type="1">
+                <li>Untuk menyediakan, mengoperasikan, dan memelihara Layanan kami;</li>
+                <li>Untuk meningkatkan, mempersonalisasi, dan memperluas Layanan kami;</li>
+                <li>Untuk memahami dan menganalisis bagaimana Anda menggunakan Layanan kami;</li>
+                <li>Untuk mengembangkan produk, layanan, fitur, dan fungsionalitas baru;</li>
+                <li>Untuk berkomunikasi dengan Anda, baik secara langsung atau melalui salah satu mitra kami, termasuk
+                  untuk layanan pelanggan, untuk memberi Anda pembaruan dan informasi lain yang berkaitan dengan
+                  Layanan,
+                  dan untuk tujuan pemasaran dan promosi;</li>
+              </ol>
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">3. Do you offer any discounts?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">Bagaimana kami melindungi informasi Anda?</div>
+            <div class="accord__body js-accord-body">
+              <ol type="1">
+                <li>Data pribadi. Jasa Tugas berkomitmen untuk melindungi data pribadi Anda. Untuk melakukannya, kami
+                  menggunakan berbagai teknologi dan tindakan keamanan yang dirancang untuk melindungi informasi dari
+                  akses, penggunaan, atau pengungkapan yang tidak sah. Tindakan yang kami gunakan dirancang untuk
+                  memberikan tingkat keamanan yang sesuai dengan risiko pemrosesan informasi pribadi Anda. Namun, harap
+                  diingat bahwa Internet tidak dapat dijamin 100% aman.</li>
+                <li>Kartu kredit atau debit. Kami tidak pernah meminta detail kartu kredit atau debit Anda. Kami juga
+                  tidak menyimpan atau memprosesnya. </li>
+              </ol>
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">4. Where can I find your privacy and data collection policies?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">Berapa lama kami menyimpan informasi Anda?</div>
+            <div class="accord__body js-accord-body">
+              Kami menyimpan informasi pribadi yang kami kumpulkan dari Anda sementara kami memiliki kebutuhan bisnis
+              yang
+              sah untuk melakukannya (misalnya, untuk menyediakan layanan yang Anda minta). <br><br>
+              Ketika kami tidak memiliki kebutuhan bisnis yang sah untuk memproses informasi pribadi Anda, kami akan
+              menghapus atau menganonimkannya atau, jika hal ini tidak memungkinkan (misalnya, karena informasi pribadi
+              Anda telah disimpan dalam arsip cadangan), maka kami akan menyimpan Anda dengan aman. informasi pribadi
+              dan
+              isolasi dari pemrosesan lebih lanjut hingga penghapusan memungkinkan.
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">5. How do I contact you if I ever need any help with using the product?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">Bagaimana Anda mengakses informasi Anda?</div>
+            <div class="accord__body js-accord-body">
+              Jika Anda adalah pengguna terdaftar, Anda dapat mengakses informasi tertentu yang terkait dengan Akun Anda
+              dengan masuk ke Layanan kami atau mengirim email ke tugas@jasatugas.co.id. <br><br>
+              Untuk melindungi privasi dan keamanan Anda, kami juga dapat mengambil langkah-langkah yang wajar untuk
+              memverifikasi identitas Anda sebelum memperbarui atau menghapus informasi Anda. Informasi yang Anda
+              berikan
+              kepada kami dapat diarsipkan atau disimpan secara berkala oleh kami sesuai dengan proses pencadangan yang
+              dilakukan dalam kegiatan bisnis biasa untuk tujuan pemulihan bencana. Kemampuan Anda untuk mengakses dan
+              mengoreksi informasi Anda mungkin terbatas untuk sementara jika akses dan koreksi dapat: menghalangi
+              kemampuan Jasa Tugas untuk mematuhi kewajiban hukum; menghalangi kemampuan Jasa Tugas untuk menyelidiki,
+              membuat atau membela tuntutan hukum; mengakibatkan pengungkapan informasi pribadi tentang pihak ketiga;
+              atau
+              mengakibatkan pelanggaran kontrak atau pengungkapan rahasia dagang atau informasi bisnis kepemilikan
+              lainnya
+              milik Jasa Tugas atau pihak ketiga.
+
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">6. Can we cancel our subscription at any time?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">Layanan pihak ketiga</div>
+            <div class="accord__body js-accord-body">
+              Anda dapat mengakses layanan pihak ketiga lainnya melalui Layanan, misalnya dengan mengklik tautan ke
+              layanan pihak ketiga tersebut dari dalam Layanan. Kami tidak bertanggung jawab atas kebijakan privasi dan
+              /
+              atau praktik layanan pihak ketiga ini, dan kami mendorong Anda untuk meninjau dengan cermat kebijakan
+              privasi mereka.
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">7. Do you offer any discounts?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">COPPA (Children Online Privacy Protection Act)</div>
+            <div class="accord__body js-accord-body">
+              Jasa Tugas tidak dengan sengaja mengumpulkan informasi dari anak-anak di bawah usia 13 tahun, dan
+              anak-anak
+              di bawah 13 tahun dilarang menggunakan Layanan kami. Jika Anda mengetahui bahwa seorang anak telah memberi
+              kami informasi pribadi yang melanggar Kebijakan Privasi ini, Anda dapat memberitahu kami di
+              tugas@jasatugas.co.id.
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">8. Where can I find your privacy and data collection policies?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">Perubahan Kebijakan Privasi Kebijakan Privasi</div>
+            <div class="accord__body js-accord-body">
+              ini dapat diubah dari waktu ke waktu, jadi harap sering-sering memeriksanya. Perubahan pada Kebijakan
+              Privasi ini akan diposting di situs web kami. Jika kami secara material mengubah cara kami menggunakan
+              atau
+              membagikan informasi pribadi yang sebelumnya dikumpulkan dari Anda melalui Layanan kami, kami akan
+              memberitahu Anda melalui Layanan kami, melalui email, atau komunikasi lainnya.</a>
             </div>
-            <div class="accord__item js-accord-item">
-              <div class="accord__head js-accord-head">9. How do I contact you if I ever need any help with using the product?</div>
-              <div class="accord__body js-accord-body">Yes, of course we do. You can either pay monthly or get an annual plan and save 20%. We also offer all our paid plans to students and non-profits absolutey for free.</div>
-            </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="footer__center center">
-          <div class="footer__row">
-            <div class="footer__col"><a class="footer__logo" href="#"><img class="footer__pic footer__pic_dark" src="assets/privacy/img/logo-dark.svg" alt=""><img class="footer__pic footer__pic_white" src="assets/privacy/img/logo-white.svg" alt=""></a><label class="switch switch_img js-switch-bg"><input class="switch__input" type="checkbox"><span class="switch__in"><span class="switch__box"></span><span class="switch__preview"><img class="switch__pic switch__pic_moon" src="assets/privacy/img/moon.svg" alt=""><img class="switch__pic switch__pic_sun" src="assets/privacy/img/sun.svg" alt=""></span></span></label></div>
-            <div class="footer__col">
-              <div class="footer__menu"><a class="footer__link js-popup-open" href="#popup-pricing" data-effect="mfp-zoom-in">Pricing</a><a class="footer__link js-popup-open" href="#popup-work" data-effect="mfp-zoom-in">How it Works</a><a class="footer__link js-popup-open" href="#popup-faq" data-effect="mfp-zoom-in">FAQ</a></div>
-            </div>
-            <div class="footer__col">
-              <div class="footer__menu"><a class="footer__link" href="#">Terms of Service</a><a class="footer__link" href="#">Privacy Policy</a></div>
-            </div>
-            <div class="footer__col">
-              <div class="footer__social social"><a class="social__link" href="#"><svg class="icon icon-instagram">
-                    <use xlink:href="assets/privacy/img/sprite.svg#icon-instagram"></use>
-                  </svg></a><a class="social__link" href="#"><svg class="icon icon-twitter">
-                    <use xlink:href="assets/privacy/img/sprite.svg#icon-twitter"></use>
-                  </svg></a><a class="social__link" href="#"><svg class="icon icon-facebook">
-                    <use xlink:href="assets/privacy/img/sprite.svg#icon-facebook"></use>
-                  </svg></a></div>
+          </div>
+          <div class="accord__item js-accord-item">
+            <div class="accord__head js-accord-head">Menguhubungi Kami</div>
+            <div class="accord__body js-accord-body">
+              Jika ada pertanyaan tentang Kebijakan Privasi ini, Anda dapat menghubungi kami menggunakan informasi di
+              bawah ini: <br>
+              website : www.jasatugas.co.id / Live Chat <br>
+              email : tugas@jasatugas.co.id <br>
+              Terakhir Diedit pada 26 Desember 2020 <br>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="footer js-footer">
+        <div class="footer__center center">
+          <div class="footer__row">
+            <div class="footer__col"><a class="footer__logo" href="#"><img class="footer__pic"
+                  src="assets/img/logo-black.svg" alt=""></a></div>
+            <div class="footer__col js-footer-col">
+              <div class="footer__category js-footer-category">Company<svg class="icon icon-arrow-down"
+                  viewBox="0 0 14 9">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
+                </svg></div>
+              <div class="footer__menu js-footer-menu">
+                <a class="footer__link" href="about-us.html">About us</a>
+                <a class="footer__link" href="pricing.html">Pricing</a>
+                <a class="footer__link" href="work.html">Work</a>
+                <a class="footer__link" href="jobs.html">Job</a>
+              </div>
+            </div>
+            <div class="footer__col js-footer-col">
+              <div class="footer__category js-footer-category">Support<svg class="icon icon-arrow-down"
+                  viewBox="0 0 14 9">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
+                </svg></div>
+              <div class="footer__menu js-footer-menu">
+                <a class="footer__link" href="contact-us.html">Contact us</a>
+                <a class="footer__link" href="#">Live Chat</a>
+                <a class="footer__link" href="terms.html">Terms of Service</a>
+                <a class="footer__link" href="privacy.html">Privacy & Policy</a>
+              </div>
+            </div>
+            <div class="footer__col js-footer-col">
+              <div class="footer__category js-footer-category">Community<svg class="icon icon-arrow-down"
+                  viewBox="0 0 14 9">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
+                </svg></div>
+              <div class="footer__menu js-footer-menu">
+                <a class="footer__link" href="#">Instagram</a>
+                <a class="footer__link" href="#">Telegram</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <!-- <a class="footer__company" href="https://ui8.net/" target="_blank"><img
+                  class="footer__pic" src="assets/landing-page/img/ui8.svg" alt=""></a> -->
+            <div class="footer__copyright">© 2020, JasaTugas.</div><a class="footer__scroll js-link-scroll"
+              href="#header">
+              <div class="footer__icon"><img class="footer__pic" src="assets/landing-page/img/scroll.svg" alt="">
+              </div>
+              <div class="footer__text">Back to top</div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="assets/privacy/js/app.js"></script>
-    <script src="assets/privacy/js/common.js"></script>
-  </body>
+  </div>
+  <script src="assets/privacy/js/app.js"></script>
+  <script src="assets/privacy/js/common.js"></script>
+  <script src="assets/img/heafoo.js"></script>
+</body>
+
 </html>

@@ -52,20 +52,36 @@ $(document).ready(function () {
     });
 })();
 
-// header
+// accord item
 (function () {
-    var header = $('.js-header'),
-        burger = header.find('.js-header-burger'),
-        wrap = header.find('.js-header-wrap'),
-        html = $('html'),
-        body = $('body');
-    burger.on('click', function () {
-        burger.toggleClass('active');
-        wrap.toggleClass('visible');
-        html.toggleClass('no-scroll');
-        body.toggleClass('no-scroll');
+    var accord = $('.js-accord-item'),
+        items = accord.find('.js-accord-item-item');
+    items.each(function () {
+        var item = $(this),
+            head = item.find('.js-accord-item-head'),
+            body = item.find('.js-accord-item-body');
+
+        head.on('click', function () {
+            item.toggleClass('active');
+            body.slideToggle();
+        });
     });
 })();
+
+// header
+// (function () {
+//     var header = $('.js-header'),
+//         burger = header.find('.js-header-burger'),
+//         wrap = header.find('.js-header-wrap'),
+//         html = $('html'),
+//         body = $('body');
+//     burger.on('click', function () {
+//         burger.toggleClass('active');
+//         wrap.toggleClass('visible');
+//         html.toggleClass('no-scroll');
+//         body.toggleClass('no-scroll');
+//     });
+// })();
 
 // body toggle bg
 (function () {

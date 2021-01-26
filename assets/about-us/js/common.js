@@ -53,26 +53,28 @@ $(document).ready(function () {
 })();
 
 // header
-(function () {
-    var header = $('.js-header'),
-        burger = header.find('.js-header-burger'),
-        wrap = header.find('.js-header-wrap'),
-        html = $('html'),
-        body = $('body');
-    burger.on('click', function () {
-        burger.toggleClass('active');
-        wrap.toggleClass('visible');
-        html.toggleClass('no-scroll');
-        body.toggleClass('no-scroll');
-    });
-})();
+// (function () {
+//     var header = $('.js-header'),
+//         burger = header.find('.js-header-burger'),
+//         wrap = header.find('.js-header-wrap'),
+//         html = $('html'),
+//         body = $('body');
+//     burger.on('click', function () {
+//         burger.toggleClass('active');
+//         wrap.toggleClass('visible');
+//         html.toggleClass('no-scroll');
+//         body.toggleClass('no-scroll');
+//     });
+// })();
 
 // body toggle bg
 (function () {
     var switchBody = $('.js-switch-bg'),
         body = $('body');
+        header = $('header');
     switchBody.on('change', function () {
         body.toggleClass('dark');
+        header.toggleClass('dark');
     });
 })();
 

@@ -4,28 +4,28 @@
 })();
 
 // header
-(function () {
-    var header = $('.js-header'),
-        burger = header.find('.js-header-burger'),
-        wrap = header.find('.js-header-wrap'),
-        bg = header.find('.js-header-bg'),
-        logo = header.find('.js-header-logo');
+// (function () {
+//     var header = $('.js-header'),
+//         burger = header.find('.js-header-burger'),
+//         wrap = header.find('.js-header-wrap'),
+//         bg = header.find('.js-header-bg'),
+//         logo = header.find('.js-header-logo');
 
-    // header menu mobile
-    burger.on('click', function () {
-        burger.toggleClass('active');
-        wrap.toggleClass('visible');
-        bg.toggleClass('show');
-        logo.toggleClass('toggle');
-    });
+//     // header menu mobile
+//     burger.on('click', function () {
+//         burger.toggleClass('active');
+//         wrap.toggleClass('visible');
+//         bg.toggleClass('show');
+//         logo.toggleClass('toggle');
+//     });
 
-    bg.on('click', function () {
-        burger.removeClass('active');
-        wrap.removeClass('visible');
-        bg.removeClass('show');
-        logo.removeClass('toggle');
-    });
-})();
+//     bg.on('click', function () {
+//         burger.removeClass('active');
+//         wrap.removeClass('visible');
+//         bg.removeClass('show');
+//         logo.removeClass('toggle');
+//     });
+// })();
 
 // global variables
 var prevArrow = '<button type="button" class="slick-prev"><svg class="icon icon-arrow-prev"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-arrow-prev"></use></svg></button>',
@@ -210,6 +210,18 @@ AOS.init();
     var plan = $('.js-plan'),
         select = plan.find('.js-plan-select'),
         item = plan.find('.js-plan-item');
+    select.change(function () {
+        var indexOption = select.find('option:selected').index();
+        item.hide();
+        item.eq(indexOption).show();
+    });
+})();
+
+// plan_info
+(function () {
+    var plan = $('.js-plan-info'),
+        select = plan.find('.js-plan-info-select'),
+        item = plan.find('.js-plan-info-item');
     select.change(function () {
         var indexOption = select.find('option:selected').index();
         item.hide();

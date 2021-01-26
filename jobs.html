@@ -28,6 +28,7 @@
     <meta property="og:site_name" content="Folio Agency">
     <meta property="fb:admins" content="132951670226590">
     <link rel="stylesheet" media="all" href="assets/jobs/css/app.css">
+    <link rel="stylesheet" media="all" href="assets/img/heafoo.css">
     <script>
       var viewportmeta = document.querySelector('meta[name="viewport"]');
       if (viewportmeta)
@@ -48,24 +49,22 @@
   <body>
     <div class="page">
       <div class="case">
-        <div class="header js-header">
-          <div class="header__center center"><a class="header__logo js-header-logo" href="index.html"><img class="header__pic header__pic_black" src="assets/jobs/img/logo.png" alt="" /><img class="header__pic header__pic_white" src="assets/jobs/img/logo-white.png" alt="" /></a>
-            <div class="header__wrap js-header-wrap">
-              <nav class="header__nav"><a class="header__item" href="#">About</a><a class="header__item active" href="#">Work</a><a class="header__item" href="#">Services</a><a class="header__item" href="#">Jobs<div class="header__counter">2</div></a></nav>
-              <div class="header__social"><a class="header__link" href="#"><svg class="icon icon-facebook">
-                    <use xlink:href="assets/jobs/img/sprite.svg#icon-facebook"></use>
-                  </svg></a><a class="header__link" href="#"><svg class="icon icon-youtube">
-                    <use xlink:href="assets/jobs/img/sprite.svg#icon-youtube"></use>
-                  </svg></a><a class="header__link" href="#"><svg class="icon icon-instagram">
-                    <use xlink:href="assets/jobs/img/sprite.svg#icon-instagram"></use>
-                  </svg></a></div>
-              <div class="line"><svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="542" height="820">
-                  <path fill="none" stroke="#323259" stroke-width="2" d="M67.002 1c-9.846 2.322-18.256 5.77-25.23 10.347C14.268 29.392 1 59 1 80.242c0 19.465 4.22 33.53 10.7 44.064 8.173 13.266 21.127 23.34 35.946 31.717S81 167.65 99.544 164.4s35.194-14.103 42.438-25.04c6.803-10.273 9.465-18.356 10.034-26.6.594-8.62.814-19.894-12.9-35.218-3.31-3.697-9.405-8.03-15.145-10.693-2.098-.973-14.094-6.014-27.454-5.476-11.45.46-24.028 5.89-30.787 11.675C50.498 86.087 44.87 111.313 47.656 129c2.55 16.172 13.563 35.116 33.645 48.24 11.517 7.526 26.962 13.923 42.67 16.554 15.095 2.53 36.494 6.735 53.47 12.248 16.285 5.29 28.394 11.897 31.848 13.942 6.62 3.92 11.166 8.683 13.38 10.648 4.286 3.803 19.582 21.91 25.16 36.19 9.54 24.417 8.908 49.09 8.256 54.772-1.8 15.703-7 27.963-12.697 37.603-9.28 15.704-21.97 24.68-33.526 28.574-10.768 3.63-20.613 2.77-24.24.96-5.258-2.624-13.262-6.02-18.323-15.728-.928-1.78-2.566-4.622-3.738-9.447-.664-2.732-1.82-19.51 3.738-34.634 2.365-6.435 7.644-21.235 18.323-34.158 14.42-17.453 35.752-33.512 45.406-39.992 16.803-11.278 32.187-19.34 48.6-22.522 3.183-.617 17.907-2.69 31.893-.54 13.195 2.03 25.598 8.157 31.39 11.784 12.017 7.524 21.507 18.63 28.876 37.773 1.484 3.855 2.396 10.446 2.868 15.367.5 5.11.503 8.59 0 14.718-1.117 13.603-4.78 29.58-14.285 47.846-3.29 6.323-8.076 14.9-16.05 25.698-4.696 6.36-13.85 17.642-27.464 33.846l-42.38 50.89c-16.087 20.25-28.28 36.992-36.11 52.17-5.392 10.447-15.198 27.915-20.753 48.628-1.272 4.743-5.466 30.186-2.688 54.394 2.714 23.655 12.28 45.97 21.036 60.27 19.17 31.318 50.474 51.02 59.716 55.687 19.282 9.734 45.952 18.277 76.11 25.364C399.75 772.703 430.5 777.88 466 785.023l175.725 33.055"></path>
-                </svg></div>
-            </div><button class="header__btn btn btn_dark">Contact Us</button><button class="header__burger js-header-burger"></button>
+        <div class="header js-header" id="header">
+          <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
+                class="header__logo" href="#"><img class="header__pic" src="assets/img/logo-black.svg" alt=""></a>
+             <div class="header__wrap js-header-wrap">
+                <nav class="header__nav">
+                   <a class="header__item" href="index.html">Home</a>
+                   <a class="header__item" href="about-us.html">About Us</a>
+                   <a class="header__item" href="pricing.html">Pricing</a>
+                   <a class="header__item" href="contact-us.html">Contact Us</a>
+                </nav>
+                <div class="header__photo"><img class="header__pic" src="assets/landing-page/img/menu-pic.png" alt="">
+                </div>
+             </div><a class="header__btn btn__header btn_pink" href="login.html">Login / Sign up</a>
           </div>
           <div class="header__bg js-header-bg"></div>
-        </div>
+       </div>
         <div class="case__center center">
           <div class="case__wrap">
             <div class="case__arrows arrows" data-aos="animation-scale-y"><a class="arrows__prev" href="#"><svg class="icon icon-arrow-prev">
@@ -73,17 +72,17 @@
                 </svg></a><a class="arrows__next" href="#"><svg class="icon icon-arrow-next">
                   <use xlink:href="assets/jobs/img/sprite.svg#icon-arrow-next"></use>
                 </svg></a></div>
-            <div class="case__category category" data-aos="animation-scale-y" data-aos-delay="200">Featured Product</div>
-            <h1 class="case__title title title_big" data-aos="animation-scale-y" data-aos-delay="400">Bento<span class="title__color">.</span></h1>
-            <div class="case__info h6" data-aos="animation-scale-y" data-aos-delay="600">Drag & Drop 3D Visual Design System.</div>
+            <!-- <div class="case__category category" data-aos="animation-scale-y" data-aos-delay="200">Featured Product</div> -->
+            <h1 class="case__title title title_big" data-aos="animation-scale-y" data-aos-delay="400">Impress<span class="title__color">.</span></h1>
+            <div class="case__info h6" data-aos="animation-scale-y" data-aos-delay="600">Drag & Drop kemudian klik secara mudah.</div>
             <div class="case__list">
               <div class="case__item" data-aos="animation-scale-y">
                 <div class="case__icon"><img class="case__pic" src="assets/jobs/img/pacman.svg" alt=""></div>
-                <div class="case__text">Global Digital <br>Agency of Record</div>
+                <div class="case__text">Solusi secara global</div>
               </div>
               <div class="case__item" data-aos="animation-scale-y" data-aos-delay="200">
                 <div class="case__icon"><img class="case__pic" src="assets/jobs/img/incognito.svg" alt=""></div>
-                <div class="case__text">5 Years of Digital <br>Marketing Excellence</div>
+                <div class="case__text">1 Tahun berpengalaman</div>
               </div>
             </div>
           </div>
@@ -106,11 +105,11 @@
                 src="assets/jobs/img/job-pic-2.png" alt=""></div>
           </div>
           <div class="access__wrap" data-aos="animation-scale-y">
-            <div class="access__info">Ready to get started?  <br>Sign up with your email</div>
+            <div class="access__info">Sudah siap bergabung <br>dengan tim Author kami?</div>
             <form class="access__form">
-              <div class="access__field"><input class="access__input" type="email" placeholder="Email address">
+              <div class="access__field"><input class="access__input" type="email" placeholder="Email">
                 <div class="access__icon"><img class="access__pic" src="assets/jobs/img/sending-mail.svg" alt=""></div>
-              </div><button class="access__btn btn btn_purple" type="submit">Get Started</button>
+              </div><button class="access__btn btn btn_purple" type="submit">Kirim Sekarang!</button>
             </form>
           </div>
         </div>
@@ -138,47 +137,47 @@
       <div class="jobs">
         <div class="jobs__center center">
           <div class="jobs__wrap">
-            <div class="jobs__stage stage"><span class="stage__line" data-aos="animation-translate-right"><span class="stage__number">06.</span> We are hiring</span>
+            <!-- <div class="jobs__stage stage"><span class="stage__line" data-aos="animation-translate-right"><span class="stage__number">06.</span> We are hiring</span>
               <div class="stage__logo"><img class="stage__pic" src="assets/jobs/img/logo-sm.png" alt=""></div>
-            </div>
+            </div> -->
             <h2 class="jobs__title title title_big" data-aos="animation-scale-y" data-aos-offset="200">Jobs</h2>
-            <div class="jobs__info" data-aos="animation-scale-y" data-aos-offset="300">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</div><a class="jobs__scroll js-scroll" data-aos="animation-scale-y" href="#">
+            <div class="jobs__info" data-aos="animation-scale-y" data-aos-offset="300">Dengan Jasa Tugas,  solusi untuk membantu teman-teman diluar sana saat ini atau masa mendatang untuk memberikan kemudahan menyelesaikan masalah mereka! Gabung Author sesuai Jenjang pendidikan yang Anda kuasai..</div><a class="jobs__scroll js-scroll" data-aos="animation-scale-y" href="#">
               <div class="jobs__icon">
                 <div class="jobs__arrows"><img class="jobs__pic" src="assets/jobs/img/arrow-right.svg" alt=""><img class="jobs__pic" src="assets/jobs/img/arrow-right.svg" alt=""></div>
               </div>
-              <div class="jobs__text">Available <br>jobs</div>
+              <div class="jobs__text">Jobs yang <br>tersedia</div>
             </a>
           </div>
           <div class="jobs__list"><a class="jobs__item" href="#" data-aos="animation-scale-y">
               <div class="jobs__inner">
-                <h5 class="jobs__vacancy h5">Graphic Designer<div class="jobs__counter">2</div>
+                <h5 class="jobs__vacancy h5">Dasar<div class="jobs__counter">2</div>
                 </h5>
-                <div class="jobs__text">2 years experience</div><svg class="icon icon-arrow-next">
+                <div class="jobs__text">1-2 tahun berpengalaman</div><svg class="icon icon-arrow-next">
                   <use xlink:href="assets/jobs/img/sprite.svg#icon-arrow-next"></use>
                 </svg>
                 <div class="jobs__preview"><img class="jobs__pic" src="assets/jobs/img/jobs-pic-1.png" alt=""></div>
               </div>
             </a><a class="jobs__item" href="#" data-aos="animation-scale-y">
               <div class="jobs__inner">
-                <h5 class="jobs__vacancy h5">Visual Designer</h5>
-                <div class="jobs__text">2 years experience</div><svg class="icon icon-arrow-next">
+                <h5 class="jobs__vacancy h5">Pertama</h5>
+                <div class="jobs__text">1-2 tahun berpengalaman</div><svg class="icon icon-arrow-next">
                   <use xlink:href="assets/jobs/img/sprite.svg#icon-arrow-next"></use>
                 </svg>
                 <div class="jobs__preview"><img class="jobs__pic" src="assets/jobs/img/jobs-pic-1.png" alt=""></div>
               </div>
             </a><a class="jobs__item" href="#" data-aos="animation-scale-y">
               <div class="jobs__inner">
-                <h5 class="jobs__vacancy h5">Art Director</h5>
-                <div class="jobs__text">2 years experience</div><svg class="icon icon-arrow-next">
+                <h5 class="jobs__vacancy h5">Atas</h5>
+                <div class="jobs__text">1-2 tahun berpengalaman</div><svg class="icon icon-arrow-next">
                   <use xlink:href="assets/jobs/img/sprite.svg#icon-arrow-next"></use>
                 </svg>
                 <div class="jobs__preview"><img class="jobs__pic" src="assets/jobs/img/jobs-pic-1.png" alt=""></div>
               </div>
             </a><a class="jobs__item" href="#" data-aos="animation-scale-y">
               <div class="jobs__inner">
-                <h5 class="jobs__vacancy h5">Web Designer<div class="jobs__counter">2</div>
+                <h5 class="jobs__vacancy h5">Tinggi / Kerja<div class="jobs__counter">2</div>
                 </h5>
-                <div class="jobs__text">2 years experience</div><svg class="icon icon-arrow-next">
+                <div class="jobs__text">1-2 tahun berpengalaman</div><svg class="icon icon-arrow-next">
                   <use xlink:href="assets/jobs/img/sprite.svg#icon-arrow-next"></use>
                 </svg>
                 <div class="jobs__preview"><img class="jobs__pic" src="assets/jobs/img/jobs-pic-1.png" alt=""></div>
@@ -193,15 +192,12 @@
         <div class="like__center center">
           <div class="like__container">
             <div class="like__wrap">
-              <h2 class="like__title title" data-aos="animation-scale-x">Native-like Prototying<span
+              <h2 class="like__title title" data-aos="animation-scale-x">Sudah terbukti<span
                   class="title__color">.</span></h2>
               <div class="like__text" data-aos="animation-scale-x" data-aos-delay="150">
-                <p>With Collab Smart Prototype you create your interactions and animations once and store as presets in
-                  the cloud for future use.  </p>
-                <p>Use the Collab App to test in real-time.</p>
+                <p>Kami menyelesaikan banyak projek dengan kepuasan Anda sebagai Prioritas kami. Tidak perlu ragu, kami memiliki Author profesional pada setiap jenjang dan bidang masing-masing.</p>                
               </div>
-              <div class="like__btn" data-aos="animation-scale-x" data-aos-delay="300"><button class="btn btn_purple">See
-                  Sample Prototype</button></div>
+              <div class="like__btn" data-aos="animation-scale-x" data-aos-delay="300"><button class="btn btn_purple">Lihat hasil kerja kami!</button></div>
             </div>
             <div class="like__preview" data-aos><img class="like__pic" src="assets/jobs/img/hand-1.png" alt=""></div>
             <div class="like__circle"></div>
@@ -215,32 +211,64 @@
           </div>
         </div>
       </div>
-      <footer class="footer">
+      <div class="footer js-footer">
         <div class="footer__center center">
-          <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic" src="assets/jobs/img/logo.png" alt=""></a>
-            <div class="footer__text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</div>
-            <div class="footer__menu"><a class="footer__link" href="#">About</a><a class="footer__link" href="#">Work</a><a class="footer__link" href="#">Services</a><a class="footer__link" href="#">Jobs</a></div>
-          </div>
-          <div class="footer__bottom">
-            <div class="footer__copyright">© 2020, UI8 LLC.</div>
-            <div class="footer__social">
-              <div class="footer__text">Follow us</div>
-              <div class="footer__list"><a class="footer__link" href="#"><svg class="icon icon-facebook">
-                    <use xlink:href="assets/jobs/img/sprite.svg#icon-facebook"></use>
-                  </svg></a><a class="footer__link" href="#"><svg class="icon icon-youtube">
-                    <use xlink:href="assets/jobs/img/sprite.svg#icon-youtube"></use>
-                  </svg></a><a class="footer__link" href="#"><svg class="icon icon-instagram">
-                    <use xlink:href="assets/jobs/img/sprite.svg#icon-instagram"></use>
-                  </svg></a></div>
-            </div>
-          </div>
+           <div class="footer__row">
+              <div class="footer__col"><a class="footer__logo" href="#"><img class="footer__pic"
+                       src="assets/img/logo-black.svg" alt=""></a></div>
+              <div class="footer__col js-footer-col">
+                 <div class="footer__category js-footer-category">Company<svg class="icon icon-arrow-down"
+                       viewBox="0 0 14 9">
+                       <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
+                    </svg></div>
+                 <div class="footer__menu js-footer-menu">
+                    <a class="footer__link" href="about-us.html">About us</a>
+                    <a class="footer__link" href="pricing.html">Pricing</a>
+                    <a class="footer__link" href="work.html">Work</a>
+                    <a class="footer__link" href="jobs.html">Job</a>
+                 </div>
+              </div>
+              <div class="footer__col js-footer-col">
+                 <div class="footer__category js-footer-category">Support<svg class="icon icon-arrow-down"
+                       viewBox="0 0 14 9">
+                       <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
+                    </svg></div>
+                 <div class="footer__menu js-footer-menu">
+                    <a class="footer__link" href="contact-us.html">Contact us</a>
+                    <a class="footer__link" href="#">Live Chat</a>
+                    <a class="footer__link" href="terms.html">Terms of Service</a>
+                    <a class="footer__link" href="privacy.html">Privacy & Policy</a>
+                 </div>
+              </div>
+              <div class="footer__col js-footer-col">
+                 <div class="footer__category js-footer-category">Community<svg class="icon icon-arrow-down"
+                       viewBox="0 0 14 9">
+                       <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
+                    </svg></div>
+                 <div class="footer__menu js-footer-menu">
+                    <a class="footer__link" href="#">Instagram</a>
+                    <a class="footer__link" href="#">Telegram</a>
+                 </div>
+              </div>
+           </div>
+           <div class="footer__bottom">
+              <!-- <a class="footer__company" href="https://ui8.net/" target="_blank"><img
+                    class="footer__pic" src="assets/landing-page/img/ui8.svg" alt=""></a> -->
+              <div class="footer__copyright">© 2020, JasaTugas.</div><a class="footer__scroll js-link-scroll"
+                 href="#header">
+                 <div class="footer__icon"><img class="footer__pic" src="assets/landing-page/img/scroll.svg" alt="">
+                 </div>
+                 <div class="footer__text">Back to top</div>
+              </a>
+           </div>
         </div>
-        <div class="line" data-aos="animation-line" data-aos-offset="0"><svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="542" height="820">
-            <path fill="none" stroke="#D1ECFD" stroke-width="2" d="M67.002 1c-9.846 2.322-18.256 5.77-25.23 10.347C14.268 29.392 1 59 1 80.242c0 19.465 4.22 33.53 10.7 44.064 8.173 13.266 21.127 23.34 35.946 31.717S81 167.65 99.544 164.4s35.194-14.103 42.438-25.04c6.803-10.273 9.465-18.356 10.034-26.6.594-8.62.814-19.894-12.9-35.218-3.31-3.697-9.405-8.03-15.145-10.693-2.098-.973-14.094-6.014-27.454-5.476-11.45.46-24.028 5.89-30.787 11.675C50.498 86.087 44.87 111.313 47.656 129c2.55 16.172 13.563 35.116 33.645 48.24 11.517 7.526 26.962 13.923 42.67 16.554 15.095 2.53 36.494 6.735 53.47 12.248 16.285 5.29 28.394 11.897 31.848 13.942 6.62 3.92 11.166 8.683 13.38 10.648 4.286 3.803 19.582 21.91 25.16 36.19 9.54 24.417 8.908 49.09 8.256 54.772-1.8 15.703-7 27.963-12.697 37.603-9.28 15.704-21.97 24.68-33.526 28.574-10.768 3.63-20.613 2.77-24.24.96-5.258-2.624-13.262-6.02-18.323-15.728-.928-1.78-2.566-4.622-3.738-9.447-.664-2.732-1.82-19.51 3.738-34.634 2.365-6.435 7.644-21.235 18.323-34.158 14.42-17.453 35.752-33.512 45.406-39.992 16.803-11.278 32.187-19.34 48.6-22.522 3.183-.617 17.907-2.69 31.893-.54 13.195 2.03 25.598 8.157 31.39 11.784 12.017 7.524 21.507 18.63 28.876 37.773 1.484 3.855 2.396 10.446 2.868 15.367.5 5.11.503 8.59 0 14.718-1.117 13.603-4.78 29.58-14.285 47.846-3.29 6.323-8.076 14.9-16.05 25.698-4.696 6.36-13.85 17.642-27.464 33.846l-42.38 50.89c-16.087 20.25-28.28 36.992-36.11 52.17-5.392 10.447-15.198 27.915-20.753 48.628-1.272 4.743-5.466 30.186-2.688 54.394 2.714 23.655 12.28 45.97 21.036 60.27 19.17 31.318 50.474 51.02 59.716 55.687 19.282 9.734 45.952 18.277 76.11 25.364C399.75 772.703 430.5 777.88 466 785.023l175.725 33.055"></path>
-          </svg></div>
-      </footer>
+     </div>
     </div>
     <script src="assets/jobs/js/app.js"></script>
     <script src="assets/jobs/js/common.js"></script>
+    <script src="assets/img/heafoo.js"></script>
   </body>
 </html>
