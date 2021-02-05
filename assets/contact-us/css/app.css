@@ -2413,6 +2413,7 @@ select {
 .stage {
   font-weight: 600;
   color: #5468E7;
+  display: inline-flex;
 }
 
 .stage__line {
@@ -6578,6 +6579,7 @@ select {
     padding: 118px 0 420px;
   }
   .case__wrap {
+    padding-top: 50px;
     max-width: 100%;
   }
   .case__arrows {

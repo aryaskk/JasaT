@@ -7,10 +7,11 @@
 }
 
 .footer .center {
-  max-width: 1184px;
-  margin: 0 auto;
+  max-width: 1284px;
+  margin: 270px auto 0;
   padding: 0 72px;
 }
+
 a.btn__header {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -39,6 +40,7 @@ a.btn__header {
 .btn_pink {
   background: #ffb1b1;
   color: #2522ba;
+  border-width: 0;
 }
 
 .btn_pink .icon {
@@ -63,7 +65,7 @@ a.btn__header {
   left: 0;
   right: 0;
   z-index: 10;
-  padding: 48px 0;  
+  padding: 40px 0;  
 }
 
 .header > .header__center {
@@ -78,6 +80,12 @@ a.btn__header {
 .header__center {
   max-width: 1440px;
   padding: 0 100px;
+}
+
+.header > .header__center .center{
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 0 42px;
 }
 
 .header__logo {
@@ -181,6 +189,7 @@ a.btn__header {
   position: relative;
   padding: 8px 0;
   letter-spacing: -0.04em;
+  font-size: 16px;
   color: #999FAE;
   font-family: 'Poppins', sans-serif;
   -webkit-transition: color .25s;
@@ -521,6 +530,17 @@ body:not(.touch-device) .header__item:hover .header__body {
   transition: all .25s;
 }
 
+.header__btn.btn {
+  min-width: 180px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
 /* Footer */
 
 .footer__row {
@@ -796,6 +816,10 @@ body:not(.touch-device) .header__item:hover .header__body {
   .header__field {
     width: 320px;
   }
+  .footer .center {
+    padding: 0 32px;
+  }
+  
   .footer__row {
     display: block;
     margin: 0 0 32px;

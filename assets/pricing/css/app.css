@@ -2355,7 +2355,7 @@ select {
   top: 12.4%;
   right: 20.5%;
   z-index: 4;
-  width: 62%;
+  width: 14%;
 }
 
 .main__preview:nth-child(3) {
@@ -3146,20 +3146,84 @@ select {
 }
 
 .achievement__preview:nth-child(2) {
-  top: 70px;
+  top: 0;
   right: -33%;
   left: -33%;
   width: auto;
 }
 
 .achievement__preview:nth-child(3) {
-  top: -12%;
-  right: -30%;
+  top: -7%;
+  right: -25%;
   z-index: 3;
-  width: 73%;
+  width: 53%;
 }
 
 .achievement__preview:not(:first-child) {
+  position: absolute;
+}
+
+.achievement2__preview:first-child {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 100%;
+}
+
+.achievement2__preview:nth-child(2) {
+  top: 70px;
+  right: -33%;
+  left: -33%;
+  width: auto;
+}
+
+.achievement2__preview:nth-child(3) {
+  top: 40%;
+  right: -35%;
+  z-index: 3;
+  width: 20%;
+}
+
+.achievement2__preview:nth-child(4) {
+  top: -20%;
+  left: -52%;
+  z-index: 4;
+  width: 130%;
+}
+
+.achievement2__preview:not(:first-child) {
+  position: absolute;
+}
+
+.achievement3__preview:first-child {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 100%;
+}
+
+.achievement3__preview:nth-child(2) {
+  top: 20%;
+  right: -33%;
+  left: -33%;
+  width: auto;
+}
+
+.achievement3__preview:nth-child(3) {
+  top: 46%;
+  right: -40%;
+  z-index: 3;
+  width: 58%;
+}
+
+.achievement3__preview:nth-child(4) {
+  top: -11%;
+  left: -63%;
+  z-index: 3;
+  width: 160%;
+}
+
+.achievement3__preview:not(:first-child) {
   position: absolute;
 }
 
@@ -5113,6 +5177,10 @@ select {
   display: none;
 }
 
+.plan__caption {
+  display: inline-flex;
+}
+
 .plan__select {
   min-width: 400px;
   height: 60px;
@@ -5183,8 +5251,9 @@ select {
   width: calc(33.333% - 40px);
   margin: 0 20px;
   padding: 40px;
-  border-radius: 4px;
+  border-radius: 32px;
   border: 1px solid #E3E6E9;
+  background-color: #fff;
 }
 
 .plan__item:first-child {
@@ -5237,6 +5306,13 @@ select {
   font-size: 18px;
   letter-spacing: 0;
   color: #606060;
+}
+
+.long__line{
+  height: 2px;
+  margin: 10px 10px 10px 0;
+  background-color: #232340;
+  width: 50px;
 }
 
 .plan__line{
@@ -6888,10 +6964,10 @@ select {
     display: none;
   }
   .main__bg {
-    top: auto;
-    right: calc(50% - 203px);
+    top: 57%;
+    right: calc(29% - 203px);
     bottom: 56px;
-    width: 400px;
+    width: 500px;
   }
   .main__preview:nth-child(5) {
     right: -2%;
@@ -7030,7 +7106,7 @@ select {
   .achievement__container {
     width: 100%;
     max-width: 375px;
-    margin: 0 auto;
+    margin: 15% auto;
   }
   .achievement__wrap {
     margin-bottom: 60px;

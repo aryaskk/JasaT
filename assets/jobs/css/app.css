@@ -7249,6 +7249,7 @@ select {
     padding: 118px 0 420px;
   }
   .case__wrap {
+    margin-top: 50px;
     max-width: 100%;
   }
   .case__arrows {
@@ -7270,7 +7271,7 @@ select {
     top: auto;
     right: calc(50% - 200px);
     bottom: 70px;
-    width: 380px;
+    width: 350px;
   }
   .case > .line {
     top: -160px;

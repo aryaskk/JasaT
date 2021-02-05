@@ -4689,7 +4689,7 @@ header.dark .btn_pink:hover {
   .popup {
     max-width: 100%;
     min-height: 100vh;
-    padding: 112px 32px 56px;
+    padding: 0 32px 56px;
     border-radius: 0;
   }
   .popup .mfp-close {

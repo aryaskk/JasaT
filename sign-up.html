@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Login Up</title>
+  <title>Sign up</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
@@ -35,49 +35,63 @@
       if (screen.width < 375) {
         var newScale = screen.width / 375;
         viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
-      }
-      else {
+      } else {
         viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
       }
     }
-
   </script>
 </head>
 
 <body>
   <div class="page">
-    <div class="entry entry_variants">
+    <div class="entry entry_solo">
       <div class="entry__center center">
         <div class="entry__head">
           <a class="entry__logo" href="index.html">
             <img class="entry__pic entry__pic_white" src="assets/img/logo.png" alt="">
-            <img class="entry__pic entry__pic_black" src="assets/img/logo-dark.png" alt=""></a>
-          <a class="entry__link" href="sign-up.html">Tidak punya akun?</a>
-          <button class="entry__btn btn btn_pink">Daftar sekarang</button></div>
+            <img class="entry__pic entry__pic_black" src="assets/img/logo-dark.png" alt="">
+          </a>
+          <a class="entry__link" href="#">Belum punya akun?</a>
+          <button class="entry__btn btn btn_pink">Daftar sekarang</button>
+        </div>
         <div class="entry__body">
           <div class="entry__row">
             <div class="entry__details">
               <div class="entry__title title title_sm">#1 JasaTugas terampuh dan paling dicari!</div>
               <div class="entry__info">Buat tugas-tugasmu mudah dikerjakan tanpa harus pusing memikirkan semua dalam 1
                 waktu</div>
-              <div class="entry__images">
-                <div class="entry__image" data-aos data-aos-duration="800" data-aos-offset="0"><img
-                    class="entry__pic js-parallax" data-orientation="up" src="assets/landing-page/img/entry-pic-1.png"
-                    alt="">
-                </div>
+              <div class="entry__img2"><img class="entry__pic" src="assets/landing-page/img/jobs-pic-1.png" alt="">
               </div>
             </div>
-            <div class="entry__form">
-              <div class="entry__title title title_sm">Biarkan tim kami membantu pekerjaan anda</div>
-              <div class="entry__info">Sederhana, cepat, mudah.</div>
-              <div class="entry__btns"><button class="entry__btn btn btn_border"><img class="btn__pic"
-                    src="assets/landing-page/img/google.svg" alt=""><span class="btn__text">Login menggunakan
-                    Google</span></button><a class="entry__btn btn btn_purple" href="login-withform.html">Login
-                  menggunakan
-                  email</a></div>
-              <div class="entry__links"><a class="entry__link" href="#">Tidak punya akun? Daftar sekarang</a><a
-                  class="entry__link" href="forgot-password.html">Lupa password?</a></div>
-            </div>
+            <form class="entry__form">
+              <div class="entry__title title title_sm">Sign Up<span class="title__color">.</span></div>
+              <div class="entry__info">Yuk gabung sekarang!</div>
+              <div class="entry__field field">
+                <div class="field__label">Username</div>
+                <div class="field__wrap">
+                  <div class="field__icon"><img class="field__pic" src="assets/landing-page/img/user.svg" alt=""></div>
+                  <input class="field__input " type="text" name="username" placeholder="Username">
+                </div>
+              </div>
+              <div class="entry__field field">
+                <div class="field__label">Email</div>
+                <div class="field__wrap">
+                  <div class="field__icon"><img class="field__pic" src="assets/landing-page/img/sending-mail.svg"
+                      alt=""></div><input class="field__input" type="email" name="email"
+                    placeholder="yourname@example.com">
+                </div>
+              </div>
+              <div class="entry__field field">
+                <div class="field__line">
+                  <div class="field__label">Password</div>
+                </div>
+                <div class="field__wrap">
+                  <div class="field__icon"><img class="field__pic" src="assets/landing-page/img/lock.svg" alt=""></div>
+                  <input class="field__input" type="password" name="password" placeholder="Password">
+                </div>
+              </div><button class="entry__btn btn btn_purple" type="submit">Masuk</button>
+              <div class="entry__links"><a class="entry__link" href="#">Belum punya akun? Daftar sekarang</a></div>
+            </form>
           </div>
         </div>
       </div>

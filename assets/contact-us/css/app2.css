@@ -1,3 +1,10 @@
+.long__line{
+  height: 2px;
+  margin: 10px 10px 10px 0;
+  background-color: #5468E7;
+  width: 50px;
+}
+
 .wrapper_dark {
   position: relative;
 }
@@ -572,7 +579,7 @@ a.btn2 {
     width: 345px;
   }
   .contacts__field:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 21px;
   }
   .contacts__social {
     margin: 0 -73px;

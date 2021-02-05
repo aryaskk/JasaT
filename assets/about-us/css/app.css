@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Public+Sans:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("fonts/SFProDisplay-Regular.woff") format("woff"), url("fonts/fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("fonts/SFProDisplay-Semibold.woff") format("woff"), url("fonts/fonts/SFProDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("fonts/SFProDisplay-Bold.woff") format("woff"), url("fonts/fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 html,
 body,
 div,
@@ -2506,7 +2527,8 @@ html.no-scroll {
 body {
   min-width: 375px;
   background: #fafbff;
-  font-family: "Public Sans", sans-serif;
+  /* font-family: "Public Sans", sans-serif; */
+  font-family: 'SF Pro Display', sans-serif;
   font-size: 16px;
   letter-spacing: -0.015em;
   line-height: 1.5;
@@ -2524,19 +2546,19 @@ body.no-scroll {
   overflow: hidden;
 }
 
-button,
+/* button,
 input,
 textarea,
 select {
   font-family: "Public Sans", sans-serif;
-}
+} */
 
 .page {
   overflow: hidden;
 }
 
 .center {
-  max-width: 1332px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 42px;
 }
@@ -2558,7 +2580,7 @@ a.btn {
   height: 64px;
   padding: 0 32px;
   border-radius: 32px;
-  font-family: "Public Sans", sans-serif;
+  /* font-family: "Public Sans", sans-serif; */
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -2839,7 +2861,7 @@ a.btn {
 
 .title {
   margin-bottom: 32px;
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   font-size: 36px;
   line-height: 1.55556;
   font-weight: 900;
@@ -2940,6 +2962,51 @@ a.btn {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+.line {
+  position: absolute;
+  z-index: -5;
+  pointer-events: none;
+  font-size: 0;
+}
+
+.line path {
+  stroke-dasharray: 2173;
+  stroke-dashoffset: 2173;
+}
+
+.main > .line {
+  top: -230px;
+  left: calc(50% - 425px);
+}
+
+.main > .line path {
+  -webkit-animation: dash 2.7s .8s linear forwards;
+  animation: dash 2.7s .8s linear forwards;
+}
+
+
+[data-aos="animation-line"] path {
+  -webkit-animation: none;
+  animation: none;
+}
+
+[data-aos="animation-line"].aos-animate path {
+  -webkit-animation: dash 3s linear forwards;
+  animation: dash 3s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
@@ -3366,7 +3433,7 @@ a.btn {
 
 .indicators__counter {
   margin-bottom: 24px;
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   font-size: 48px;
   line-height: 1.5;
   font-weight: 900;
@@ -3935,7 +4002,7 @@ a.btn {
   border-radius: 32px;
   border: 2px solid rgba(20, 20, 27, 0.08);
   background: none;
-  font-family: "Public Sans", sans-serif;
+  /* font-family: "Public Sans", sans-serif; */
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -4125,7 +4192,7 @@ a.btn {
 }
 
 .pricing__money {
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   font-size: 36px;
   line-height: 1.55556;
   font-weight: 900;
@@ -4656,6 +4723,13 @@ body.dark .accord__body {
   }
 }
 
+@media only screen and (max-width: 1279px) {
+  .main > .line {
+    top: -110px;
+    left: calc(50% - 365px);
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   /* .header__center {
     padding: 0 48px;
@@ -4865,6 +4939,9 @@ body.dark .accord__body {
   .main__pic {
     width: 100%;
     max-width: 768px;
+  }
+  .main > .line {
+    left: 100px;
   }
   .line__preview {
     top: -150px;
@@ -5084,6 +5161,10 @@ body.dark .accord__body {
   }
   .main__info {
     margin-bottom: 48px;
+  }
+  .main > .line {
+    top: -160px;
+    left: 75px;
   }
   .quality__head {
     margin-bottom: 56px;

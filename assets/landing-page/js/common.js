@@ -78,8 +78,8 @@ if (isTouchDevice()) {
 })();
 
 // global variables
-var prevArrow = '<button type="button" class="slick-prev"><svg class="icon icon-arrow-prev"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-arrow-prev"></use></svg></button>',
-    nextArrow = '<button type="button" class="slick-next"><svg class="icon icon-arrow-next"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-arrow-next"></use></svg></button>';
+var prevArrow = '<button type="button" class="slick-prev"><svg class="icon icon-arrow-prev" viewBox="0 0 16 11"><path d="M5.854.146a.5.5 0 0 1 .057.638l-.057.07L1.707 5H15.5a.5.5 0 0 1 .09.992L15.5 6H1.707l4.147 4.146a.5.5 0 0 1 .057.638l-.057.07a.5.5 0 0 1-.638.057l-.07-.057-5-5-.011-.013a.503.503 0 0 1-.033-.039l.044.052A.502.502 0 0 1 0 5.5v-.01c0-.022.002-.043.005-.064L0 5.5a.502.502 0 0 1 .089-.284l.013-.018a.503.503 0 0 1 .033-.04l.011-.012 5-5a.5.5 0 0 1 .708 0z"/></svg></button>',
+    nextArrow = '<button type="button" class="slick-next"><svg class="icon icon-arrow-next" viewBox="0 0 16 11"><path d="M10.146 10.854a.5.5 0 0 1-.057-.638l.057-.07L14.293 6H.5a.5.5 0 0 1-.09-.992L.5 5h13.793L10.146.854a.5.5 0 0 1-.057-.638l.057-.07a.5.5 0 0 1 .638-.057l.07.057 5 5 .011.013a.503.503 0 0 1 .033.039l-.044-.052A.502.502 0 0 1 16 5.5v.01a.503.503 0 0 1-.005.064L16 5.5a.502.502 0 0 1-.089.284l-.013.018a.503.503 0 0 1-.033.04l-.011.012-5 5a.5.5 0 0 1-.708 0z"/></svg></button>';
 
 $(document).ready(function () {
 
@@ -298,3 +298,11 @@ var rellax = new Rellax('.js-rellax', {
     vertical: true,
     horizontal: false
 });
+
+(function () {
+    var field_input = $('input.field__input');
+    field_input.on('focus blur', function(){
+        // $(this).toggleClass('asd');
+        $('.field__icon .field__pic').toggleClass("asd");
+    });
+})();

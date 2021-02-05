@@ -40,6 +40,14 @@
          }
       }
    </script>
+   <style>
+      .sticky {
+         position: fixed;
+         top: 0;
+         width: 100%;
+         background-color: #fff;
+      }
+   </style>   
 </head>
 
 <body>
@@ -47,7 +55,7 @@
       <div class="main">
          <div class="header js-header" id="header">
             <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
-                  class="header__logo" href="#"><img class="header__pic" src="assets/img/logo-black.svg" alt=""></a>
+                  class="header__logo" href="#"><img class="header__pic" src="assets/img/logo-dark.png" alt=""></a>
                <div class="header__wrap js-header-wrap">
                   <nav class="header__nav">
                      <a class="header__item" href="index.html">Home</a>
@@ -178,6 +186,11 @@
                </div>
             </div>
          </div>
+         <div class="line"><svg class="line__svg" xmlns="http://www.w3.org/2000/svg" width="642" height="820">
+               <path class="path" fill="none" stroke="#FFC7DF" stroke-width="2"
+                  d="M67.002 1c-9.846 2.322-18.256 5.77-25.23 10.347C14.268 29.392 1 59 1 80.242c0 19.465 4.22 33.53 10.7 44.064 8.173 13.266 21.127 23.34 35.946 31.717S81 167.65 99.544 164.4s35.194-14.103 42.438-25.04c6.803-10.273 9.465-18.356 10.034-26.6.594-8.62.814-19.894-12.9-35.218-3.31-3.697-9.405-8.03-15.145-10.693-2.098-.973-14.094-6.014-27.454-5.476-11.45.46-24.028 5.89-30.787 11.675C50.498 86.087 44.87 111.313 47.656 129c2.55 16.172 13.563 35.116 33.645 48.24 11.517 7.526 26.962 13.923 42.67 16.554 15.095 2.53 36.494 6.735 53.47 12.248 16.285 5.29 28.394 11.897 31.848 13.942 6.62 3.92 11.166 8.683 13.38 10.648 4.286 3.803 19.582 21.91 25.16 36.19 9.54 24.417 8.908 49.09 8.256 54.772-1.8 15.703-7 27.963-12.697 37.603-9.28 15.704-21.97 24.68-33.526 28.574-10.768 3.63-20.613 2.77-24.24.96-5.258-2.624-13.262-6.02-18.323-15.728-.928-1.78-2.566-4.622-3.738-9.447-.664-2.732-1.82-19.51 3.738-34.634 2.365-6.435 7.644-21.235 18.323-34.158 14.42-17.453 35.752-33.512 45.406-39.992 16.803-11.278 32.187-19.34 48.6-22.522 3.183-.617 17.907-2.69 31.893-.54 13.195 2.03 25.598 8.157 31.39 11.784 12.017 7.524 21.507 18.63 28.876 37.773 1.484 3.855 2.396 10.446 2.868 15.367.5 5.11.503 8.59 0 14.718-1.117 13.603-4.78 29.58-14.285 47.846-3.29 6.323-8.076 14.9-16.05 25.698-4.696 6.36-13.85 17.642-27.464 33.846l-42.38 50.89c-16.087 20.25-28.28 36.992-36.11 52.17-5.392 10.447-15.198 27.915-20.753 48.628-1.272 4.743-5.466 30.186-2.688 54.394 2.714 23.655 12.28 45.97 21.036 60.27 19.17 31.318 50.474 51.02 59.716 55.687 19.282 9.734 45.952 18.277 76.11 25.364C399.75 772.703 430.5 777.88 466 785.023l175.725 33.055">
+               </path>
+            </svg></div>
       </div>
       <div class="quality">
          <div class="quality__head">
@@ -282,8 +295,7 @@
                   <div class="demo__text">Sudah siap untuk merevolusi alur pengerjaan tugas - tugas Anda yang menumpuk
                      setiap harinya?
                   </div>
-                  <a class="demo__btn btn btn_white js-popup-open" href="#popup-contact"
-                     data-effect="mfp-zoom-in">Daftar / Login</a>
+                  <a class="demo__btn btn btn_white" href="login.html" data-effect="mfp-zoom-in">Daftar / Login</a>
                </div>
             </div>
          </div>
@@ -329,64 +341,77 @@
                <div class="teams__col">
                   <div class="teams__container">
                      <div class="teams__slider js-teams-slider">
-                        <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="200">
+                        <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="400">
+                           <div class="teams__line" style="background-color: #FAB8C4;"></div>
+                           <!-- <div class="teams__name" style="color: #5956E9;">Bento</div> -->
+                           <div class="teams__text">“ Aku suka banget sama pelayanannya, tapi kadang cepet kadang lambat
+                              banget, tolong ditingkatkan lagi.
+                              ” </div>
+                           <div class="teams__user">
+                              <!-- <div class="teams__ava"><img class="teams__pic" src="assets/landing-page/img/ava-1.png"
+                                    alt=""></div> -->
+                              <div class="teams__box">
+                                 <div class="teams__man">R**dra</div>
+                                 <div class="teams__login">Mahasiswa</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="400">
                            <div class="teams__line" style="background-color: #5956E9;"></div>
                            <!-- <div class="teams__name" style="color: #C75C6F;">UI8</div> -->
-                           <div class="teams__text">“ Ini dia yang ditunggu-tunggu, akhirnya launching sistemnya min,
-                              mantab Jasa Tugas ”</div>
+                           <div class="teams__text">“ Jasa Tugas sangat recommended pokoknya, fast respon dan setiap
+                              permasalah segera dijawab.”</div>
                            <div class="teams__user">
                               <!-- <div class="teams__ava"><img class="teams__pic" src="assets/landing-page/img/ui8.png"
                                     alt=""></div> -->
                               <div class="teams__box">
-                                 <div class="teams__man">Lxxm</div>
-                                 <div class="teams__login">Mahasiswa</div>
+                                 <div class="teams__man">V**kit</div>
+                                 <div class="teams__login">Frelance</div>
                               </div>
                            </div>
                         </div>
                         <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="400">
                            <div class="teams__line" style="background-color: #FAB8C4;"></div>
                            <!-- <div class="teams__name" style="color: #5956E9;">Bento</div> -->
-                           <div class="teams__text">“ Slow respon, maklum mungkin memang lagi rame, emang ini lagi viral
-                              ”</div>
+                           <div class="teams__text">“ Kurang puas, orderan saya lebih dr 24 jam blm ada progress. CS
+                              juga tidak membantu. Pelayanan kurang memuaskan.”</div>
                            <div class="teams__user">
                               <!-- <div class="teams__ava"><img class="teams__pic" src="assets/landing-page/img/ava-1.png"
                                     alt=""></div> -->
                               <div class="teams__box">
-                                 <div class="teams__man">Rxxdra</div>
+                                 <div class="teams__man">W**yu</div>
                                  <div class="teams__login">Mahasiswa</div>
                               </div>
                            </div>
                         </div>
-                        <!-- <div class="teams__slide">
-                           <div class="teams__line" style="background-color: #5956E9;"></div>
-                           <div class="teams__name" style="color: #C75C6F;">UI8</div>
-                           <div class="teams__text">“ JasaTugas is fast. Files are always up to date. <br>It’s easy to
-                              share
-                              designs across the organization, so collaboration is easy ”</div>
+                        <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="400">
+                           <div class="teams__line" style="background-color: #C75C6F;"></div>
+                           <!-- <div class="teams__name" style="color: #5956E9;">Bento</div> -->
+                           <div class="teams__text">“ Sempet ragu mau pake jasa ini, tapi ini sangat membantuku.
+                              Terimakasih banyak Jasa Tugas! responya cepat.”</div>
                            <div class="teams__user">
-                              <div class="teams__ava"><img class="teams__pic" src="assets/landing-page/img/ui8.png"
-                                    alt=""></div>
+                              <!-- <div class="teams__ava"><img class="teams__pic" src="assets/landing-page/img/ava-1.png"
+                                    alt=""></div> -->
                               <div class="teams__box">
-                                 <div class="teams__man">Dash</div>
-                                 <div class="teams__login">Founder @UI8</div>
+                                 <div class="teams__man">Mi***l</div>
+                                 <div class="teams__login">Pelajar</div>
                               </div>
                            </div>
                         </div>
-                        <div class="teams__slide">
-                           <div class="teams__line" style="background-color: #FAB8C4;"></div>
-                           <div class="teams__name" style="color: #5956E9;">Bento</div>
-                           <div class="teams__text">“ JasaTugas is fast. Files are always up to date. <br>It’s easy to
-                              share
-                              designs across the organization, so collaboration is easy ”</div>
+                        <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="400">
+                           <div class="teams__line" style="background-color: #5956E9;"></div>
+                           <!-- <div class="teams__name" style="color: #5956E9;">Bento</div> -->
+                           <div class="teams__text">“Saya merekomendasikan Jasa Tugas karena pelayanannya sangat mantap
+                              dan cukup memuaskan ”</div>
                            <div class="teams__user">
-                              <div class="teams__ava"><img class="teams__pic" src="assets/landing-page/img/ava-1.png"
-                                    alt=""></div>
+                              <!-- <div class="teams__ava"><img class="teams__pic" src="assets/landing-page/img/ava-1.png"
+                                    alt=""></div> -->
                               <div class="teams__box">
-                                 <div class="teams__man">Emily</div>
-                                 <div class="teams__login">Founder @Bento</div>
+                                 <div class="teams__man">P***ri</div>
+                                 <div class="teams__login">Mahasiswa</div>
                               </div>
                            </div>
-                        </div> -->
+                        </div>
                      </div>
                   </div>
                </div>
@@ -488,7 +513,8 @@
                      <li>Bantuan</li>
                   </ul>
                   <a class="main__btn btn btn_purple js-popup-open" style="margin-top: 24px;"
-                     data-aos="animation-scale-y" data-aos-delay="550" href="#popup-faq">FAQ</a>
+                     data-aos="animation-scale-y" data-aos-delay="550" data-effect="mfp-zoom-in"
+                     href="#popup-faq">FAQ</a>
                   <div class="popup_nd popup_nd_big mfp-hide" id="popup-faq">
                      <div class="assent accord_faq js-accord">
                         <h2 class="assent__title">FAQ</h2>
@@ -569,9 +595,9 @@
                      <div class="accord__body js-accord-body"
                         style="display: block; background-image: url('assets/landing-page/img/author.png'); background-size: 40%;">
                         <ul class="accord__desc">
-                           <li>3+ user</li>
-                           <li>5 TB of secure storage</li>
-                           <li>Premium productivity features and simple, secure file sharing</li>
+                           <li>20+ Tim Author </li>
+                           <li>Professional</li>
+                           <li>Menguasai masing-masing bidang</li>
                         </ul>
                      </div>
                   </div>
@@ -582,11 +608,11 @@
                         <div class="accord__category">Sistem Serba Otomatis</div>
                      </div>
                      <div class="accord__body js-accord-body"
-                        style="background-image: url('assets/landing-page/img/automatic.png');">
+                        style="background-image: url('assets/landing-page/img/help.png');">
                         <ul class="accord__desc">
-                           <li>3+ user</li>
-                           <li>5 TB of secure storage</li>
-                           <li>Premium productivity features and simple, secure file sharing</li>
+                           <li>Sistem Pembayaran Otomatis</li>
+                           <li>Mempermudah aktifitas Anda</li>
+                           <li>Kami terus mengembangkan sistem untuk menunjang kenyamanan Anda</li>
                         </ul>
                      </div>
                   </div>
@@ -599,9 +625,9 @@
                      <div class="accord__body js-accord-body"
                         style="background-image: url('assets/landing-page/img/dashboard.png');">
                         <ul class="accord__desc">
-                           <li>3+ user</li>
-                           <li>5 TB of secure storage</li>
-                           <li>Premium productivity features and simple, secure file sharing</li>
+                           <li>Sistem Dashboard</li>
+                           <li>Memantau progress secara mudah</li>
+                           <li>Fitur ini sedang dalam tahap Development ( Coming Soon )</li>
                         </ul>
                      </div>
                   </div>
@@ -612,11 +638,11 @@
                         <div class="accord__category">Dukungan penuh dari Tim CS</div>
                      </div>
                      <div class="accord__body js-accord-body"
-                        style="background-image: url('assets/landing-page/img/help.png');">
+                        style="background-image: url('assets/landing-page/img/automatic.png');">
                         <ul class="accord__desc">
-                           <li>3+ user</li>
-                           <li>5 TB of secure storage</li>
-                           <li>Premium productivity features and simple, secure file sharing</li>
+                           <li>24/7 Setiap Hari</li>
+                           <li>Tim CS kami siap membantu anda</li>
+                           <li>Semua jenis permasalahan Anda bisa langsung didiskukan dengan tim CS kami </li>
                         </ul>
                      </div>
                   </div>
@@ -686,7 +712,7 @@
          <div class="footer__center center">
             <div class="footer__row">
                <div class="footer__col"><a class="footer__logo" href="#"><img class="footer__pic"
-                        src="assets/img/logo-black.svg" alt=""></a></div>
+                        src="assets/img/logo-dark.png" alt=""></a></div>
                <div class="footer__col js-footer-col">
                   <div class="footer__category js-footer-category">Company<svg class="icon icon-arrow-down"
                         viewBox="0 0 14 9">
@@ -722,6 +748,8 @@
                   <div class="footer__menu js-footer-menu">
                      <a class="footer__link" href="#">Instagram</a>
                      <a class="footer__link" href="#">Telegram</a>
+                     <a class="footer__link" href="#">Facebook</a>
+                     <a class="footer__link" href="#">Whatsapp</a>
                   </div>
                </div>
             </div>
@@ -740,7 +768,7 @@
       <div class="popup mfp-hide" id="popup-contact">
          <div class="popup__wrap">
             <div class="popup__head"><a class="popup__logo" href="#"><img class="popup__pic"
-                     src="assets/landing-page/img/logo.svg" alt=""></a>
+                     src="assets/landing-page/img/logo.png" alt=""></a>
             </div>
             <div class="popup__body">
                <div class="popup__title title">Get in touch<span class="title__color">.</span></div>
@@ -808,6 +836,20 @@
          ss.parentNode.insertBefore(s, ss)
       })(window, document); 
    </script>
+   <script>
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("header");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      </script>
    <!-- End of Chaport Live Chat code -->
 </body>
 
