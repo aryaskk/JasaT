@@ -7,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/work/img/apple-touch-icon.png">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/work/img/apple-touch-icon.png"> -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon.png">
-  <link rel="manifest" href="assets/work/img/site.webmanifest">
-  <link rel="mask-icon" href="assets/work/img/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- <link rel="manifest" href="assets/work/img/site.webmanifest"> -->
+  <!-- <link rel="mask-icon" href="assets/work/img/safari-pinned-tab.svg" color="#5bbad5"> -->
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <!-- <meta name="description" content="Production-ready Portfolio and Case Study Template for Design Agencies">
-    <meta name="twitter:card" content="summary">
+  <meta name="description" content="Kemudahan pengelolan semua tugas dengan kami Jasa Tugas">
+  <!-- <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@ui8">
     <meta name="twitter:title" content="Folio Agency">
     <meta name="twitter:description" content="Production-ready Portfolio and Case Study Template for Design Agencies">
@@ -47,23 +47,23 @@
 
 <body>
   <div class="page">
-    <div class="main">
-      <div class="header js-header" id="header">
-        <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
-            class="header__logo" href="#"><img class="header__pic" src="assets/img/logo-dark.png" alt=""></a>
-          <div class="header__wrap js-header-wrap">
-            <nav class="header__nav">
-              <a class="header__item" href="index.html">Home</a>
-              <a class="header__item" href="about-us.html">About Us</a>
-              <a class="header__item" href="pricing.html">Pricing</a>
-              <a class="header__item" href="contact-us.html">Contact Us</a>
-            </nav>
-            <div class="header__photo"><img class="header__pic" src="assets/landing-page/img/menu-pic.png" alt="">
-            </div>
-          </div><a class="header__btn btn btn__header btn_pink" href="login.html">Login / Sign up</a>
-        </div>
-        <div class="header__bg js-header-bg"></div>
+    <div class="header js-header" id="header">
+      <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
+          class="header__logo" href="index.html"><img class="header__pic" src="assets/img/logo-dark.png" alt=""></a>
+        <div class="header__wrap js-header-wrap">
+          <nav class="header__nav">
+            <a class="header__item" href="index.html">Home</a>
+            <a class="header__item" href="about-us.html">About Us</a>
+            <a class="header__item" href="pricing.html">Pricing</a>
+            <a class="header__item" href="contact-us.html">Contact Us</a>
+          </nav>
+          <div class="header__photo"><img class="header__pic" src="assets/landing-page/img/menu-pic.png" alt="">
+          </div>
+        </div><a class="header__btn btn btn__header btn_pink" href="login.html">Login / Sign up</a>
       </div>
+      <div class="header__bg js-header-bg"></div>
+    </div>
+    <div class="main" id="main">      
       <div class="main__center center">
         <div class="main__wrap">
           <h1 class="main__title title" data-aos>
@@ -74,7 +74,7 @@
           <div class="main__info" data-aos="animation-translate-up" data-aos-delay="200">Tanpa batas mempermudah
             persoalan tugas yang menumpuk agar Anda bisa fokus mengerjakan yang lain.</div>
           <div class="main__btn" data-aos="animation-translate-up" data-aos-delay="400"><button
-              class="btn btn_primary">Diskusi Sekarang</button></div><a class="main__scroll js-scroll" href="#details"
+              class="btn btn_primary" onclick="window.chaport.q('open'); return false;">Diskusi Sekarang</button></div><a class="main__scroll js-scroll" href="#projects"
             data-aos="animation-translate-up">
             <div class="main__icon">
               <div class="main__arrows"><img class="main__pic" src="assets/work/img/arrow-down.svg" alt=""><img
@@ -140,7 +140,7 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
       <div class="projects__center center">
         <div class="projects__head head">
           <div class="head__box">
@@ -168,7 +168,7 @@
                 </svg></div>
             </a>
           </div>
-          <div class="projects__preview"><a class="projects__arrow arrow__solid__background" href="#">
+          <div class="projects__preview"><a class="projects__arrow arrow__solid__background" href="#" onclick="window.chaport.q('open'); return false;">
               <div class="arrow__solid"><svg class="icon icon-arrow-next" viewBox="0 0 22 16">
                   <path
                     d="M13.293 15.707a1 1 0 0 1-.083-1.32l.083-.094L18.585 9H1a1 1 0 0 1-.117-1.993L1 7h17.585l-5.292-5.293a1 1 0 0 1-.083-1.32l.083-.094a1 1 0 0 1 1.32-.083l.094.083 7 7 .073.082.007.008-.08-.09A1.008 1.008 0 0 1 22 7.98v.037c0 .024-.002.048-.004.071L22 8a1.008 1.008 0 0 1-.21.613 1.037 1.037 0 0 1-.083.094l-7 7a1 1 0 0 1-1.414 0z" />
@@ -187,7 +187,7 @@
             <div class="projects__preview">
               <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.3"
                   data-orientation="right" src="assets/work/img/projects-pic-2.png" alt=""></div><a
-                class="projects__arrow arrow" href="#">
+                class="projects__arrow arrow" href="#" onclick="window.chaport.q('open'); return false;">
                 <div class="arrow__line"><svg class="icon icon-arrow-next" viewBox="0 0 22 16">
                     <path
                       d="M13.293 15.707a1 1 0 0 1-.083-1.32l.083-.094L18.585 9H1a1 1 0 0 1-.117-1.993L1 7h17.585l-5.292-5.293a1 1 0 0 1-.083-1.32l.083-.094a1 1 0 0 1 1.32-.083l.094.083 7 7 .073.082.007.008-.08-.09A1.008 1.008 0 0 1 22 7.98v.037c0 .024-.002.048-.004.071L22 8a1.008 1.008 0 0 1-.21.613 1.037 1.037 0 0 1-.083.094l-7 7a1 1 0 0 1-1.414 0z" />
@@ -213,7 +213,7 @@
             <h4 class="projects__info h4" data-aos="animation-scale-y">Editing</h4>
             <div class="projects__preview">
               <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.3" data-orientation="left"
-                  src="assets/work/img/editing.png" alt=""></div><a class="projects__arrow arrow" href="#">
+                  src="assets/work/img/editing.png" alt=""></div><a class="projects__arrow arrow" href="#" onclick="window.chaport.q('open'); return false;">
                 <div class="arrow__line"><svg class="icon icon-arrow-next" viewBox="0 0 22 16">
                     <path
                       d="M13.293 15.707a1 1 0 0 1-.083-1.32l.083-.094L18.585 9H1a1 1 0 0 1-.117-1.993L1 7h17.585l-5.292-5.293a1 1 0 0 1-.083-1.32l.083-.094a1 1 0 0 1 1.32-.083l.094.083 7 7 .073.082.007.008-.08-.09A1.008 1.008 0 0 1 22 7.98v.037c0 .024-.002.048-.004.071L22 8a1.008 1.008 0 0 1-.21.613 1.037 1.037 0 0 1-.083.094l-7 7a1 1 0 0 1-1.414 0z" />
@@ -240,7 +240,7 @@
             <h4 class="projects__info h4" data-aos="animation-scale-y">Translater</h4>
             <div class="projects__preview">
               <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.2" data-orientation="down"
-                  src="assets/work/img/projects-pic-4.png" alt=""></div><a class="projects__arrow arrow" href="#">
+                  src="assets/work/img/projects-pic-4.png" alt=""></div><a class="projects__arrow arrow" href="#" onclick="window.chaport.q('open'); return false;">
                 <div class="arrow__line"><svg class="icon icon-arrow-next" viewBox="0 0 22 16">
                     <path
                       d="M13.293 15.707a1 1 0 0 1-.083-1.32l.083-.094L18.585 9H1a1 1 0 0 1-.117-1.993L1 7h17.585l-5.292-5.293a1 1 0 0 1-.083-1.32l.083-.094a1 1 0 0 1 1.32-.083l.094.083 7 7 .073.082.007.008-.08-.09A1.008 1.008 0 0 1 22 7.98v.037c0 .024-.002.048-.004.071L22 8a1.008 1.008 0 0 1-.21.613 1.037 1.037 0 0 1-.083.094l-7 7a1 1 0 0 1-1.414 0z" />
@@ -267,7 +267,7 @@
             <h4 class="projects__info h4" data-aos="animation-scale-y">Mathematic</h4>
             <div class="projects__preview">
               <div class="projects__img"><img class="projects__pic js-parallax" data-scale="1.4" data-orientation="up"
-                  src="assets/work/img/math.png" alt=""></div><a class="projects__arrow arrow" href="#">
+                  src="assets/work/img/math.png" alt=""></div><a class="projects__arrow arrow" href="#" onclick="window.chaport.q('open'); return false;">
                 <div class="arrow__line"><svg class="icon icon-arrow-next" viewBox="0 0 22 16">
                     <path
                       d="M13.293 15.707a1 1 0 0 1-.083-1.32l.083-.094L18.585 9H1a1 1 0 0 1-.117-1.993L1 7h17.585l-5.292-5.293a1 1 0 0 1-.083-1.32l.083-.094a1 1 0 0 1 1.32-.083l.094.083 7 7 .073.082.007.008-.08-.09A1.008 1.008 0 0 1 22 7.98v.037c0 .024-.002.048-.004.071L22 8a1.008 1.008 0 0 1-.21.613 1.037 1.037 0 0 1-.083.094l-7 7a1 1 0 0 1-1.414 0z" />
@@ -334,7 +334,7 @@
               </svg></div>
             <div class="footer__menu js-footer-menu">
               <a class="footer__link" href="contact-us.html">Contact us</a>
-              <a class="footer__link" href="#">Live Chat</a>
+              <a class="footer__link" href="#" onclick="window.chaport.q('open'); return false;">Live Chat</a>
               <a class="footer__link" href="terms.html">Terms of Service</a>
               <a class="footer__link" href="privacy.html">Privacy & Policy</a>
             </div>
@@ -346,10 +346,10 @@
                   d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
               </svg></div>
             <div class="footer__menu js-footer-menu">
-              <a class="footer__link" href="#">Instagram</a>
-              <a class="footer__link" href="#">Telegram</a>
-              <a class="footer__link" href="#">Facebook</a>
-              <a class="footer__link" href="#">Whatsapp</a>
+              <a class="footer__link" href="https://www.instagram.com/jasatugascoid/" target="_blank">Instagram</a>
+              <a class="footer__link" href="https://t.me/jasatugascoid" target="_blank">Telegram</a>
+              <a class="footer__link" href="https://twitter.com/jasatugascoid" target="_blank">Twitter</a>
+              <a class="footer__link" href="https://api.whatsapp.com/send/?phone=628137003300&text=Hai+JasaTugas%2C+bisa+bantu+saya+untuk+...&app_absent=0" target="_blank">Whatsapp</a>
             </div>
           </div>
         </div>
@@ -357,7 +357,7 @@
           <!-- <a class="footer__company" href="https://ui8.net/" target="_blank"><img
                     class="footer__pic" src="assets/landing-page/img/ui8.svg" alt=""></a> -->
           <div class="footer__copyright">© 2020, JasaTugas.</div><a class="footer__scroll js-link-scroll"
-            href="#header">
+            href="#main">
             <div class="footer__icon"><img class="footer__pic" src="assets/landing-page/img/scroll.svg" alt="">
             </div>
             <div class="footer__text">Back to top</div>

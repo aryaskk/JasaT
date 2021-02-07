@@ -2882,7 +2882,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   position: relative;
   font-family: "DM Sans", sans-serif;
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.025em;
 }
@@ -9373,7 +9373,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     margin: 0 auto;
   }
   .header__logo .header__pic {
-    width: 100px;
+    width: 140px;
   }
   .header__burger {
     display: inline-block;
@@ -9441,7 +9441,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .title {
     font-size: 48px;
-    line-height: 1.2;
+    line-height: 1.14;
   }
   .title__nd {
     margin-bottom: 24px;
