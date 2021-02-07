@@ -6964,10 +6964,10 @@ select {
     display: none;
   }
   .main__bg {
-    top: 57%;
-    right: calc(29% - 203px);
+    top: 59%;
+    right: calc(50% - 203px);
     bottom: 56px;
-    width: 500px;
+    width: 400px;
   }
   .main__preview:nth-child(5) {
     right: -2%;

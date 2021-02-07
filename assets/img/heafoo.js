@@ -114,3 +114,16 @@ if (isTouchDevice()) {
     }
   }
 })();
+
+// scroll to section
+(function () {
+  var link = $('.js-link-scroll');
+  link.click(function () {
+      $("html, body").animate({
+          scrollTop: $(link.attr("href")).offset().top + "px"
+      }, {
+          duration: 1000
+      });
+      return false;
+  });
+})();

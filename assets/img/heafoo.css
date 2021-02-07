@@ -539,6 +539,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   top: 0;
   width: 100%;
   background-color: #fff;
+  padding: 20px 0;
 }
 
 /* Footer */
@@ -734,6 +735,9 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 @media only screen and (max-width: 767px) {
+  .sticky {
+    padding: 30px 0;
+  }
   .btn__header {
     height: 56px;
     border-radius: 28px;
@@ -742,16 +746,16 @@ body:not(.touch-device) .header__item:hover .header__body {
   .main__page {
     padding: 170px 0 35px;
   }
-  .header {
+  /* .header {
     padding: 40px 0;
-  }
+  } */
   .header__logo {
     position: relative;
     z-index: 15;
     margin: 0 auto;
   }
   .header__logo .header__pic {
-    width: 100px;
+    width: 140px;
   }
   .header__burger {
     display: inline-block;

@@ -2902,6 +2902,7 @@ select {
 
 .wrapper {
   position: relative;
+  margin-top: 200px;
   margin-bottom: 51px;
   padding: 152px 0 130px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.0001)), to(rgba(237, 229, 240, 0.504289)));

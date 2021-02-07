@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Page description">
+    <meta name="description" content="Kemudahan pengelolan semua tugas dengan kami Jasa Tugas">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon.png">
     <!--Twitter Card data-->
@@ -28,6 +28,11 @@
     <meta property="fb:admins" content="Facebook numeric ID"> -->
     <link rel="stylesheet" media="all" href="assets/about-us/css/app.css">
     <link rel="stylesheet" media="all" href="assets/img/heafoo.css">
+    <style>
+      .main__page {
+        padding-bottom: 0;
+      }
+    </style>
     <script>
       var viewportmeta = document.querySelector('meta[name="viewport"]');
       if (viewportmeta) {
@@ -46,7 +51,7 @@
       <div class="main__page">
         <header class="header js-header" id="header">
           <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
-              class="header__logo" href="#"><img class="header__pic" src="assets/img/logo-dark.png" alt=""></a>
+              class="header__logo" href="index.html"><img class="header__pic" src="assets/img/logo-dark.png" alt=""></a>
             <div class="header__wrap js-header-wrap">
               <nav class="header__nav">
                 <a class="header__item" href="index.html">Home</a>
@@ -60,7 +65,7 @@
           </div>
           <div class="header__bg js-header-bg"></div>
         </header>
-        <div class="main section">
+        <div class="main section" id="main">
           <div class="main__center center">
             <div class="main__wrap">
               <h1 class="main__title title title_big" data-aos="animation-scale-y-and-color">Kelola tugas harian anda
@@ -70,13 +75,14 @@
                 mengelola
                 tugas Anda dengan teknologi manajemen proyek revolusioner kami.</div>
               <div class="main__btns" data-aos="animation-scale-y" data-aos-delay="300"><a
-                  class="main__btn btn btn_purple js-popup-open" href="#" data-effect="mfp-zoom-in">
+                  class="main__btn btn btn_purple js-popup-open" href="login.html" data-effect="mfp-zoom-in">
                   <svg class="icon icon-arrow-right" id="icon-arrow-right" viewBox="0 0 8 14">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M.293.293a1 1 0 0 0 0 1.414L5.586 7 .293 12.293a1 1 0 1 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 0z">
                     </path>
                   </svg><span class="btn__text">Login</span></a><a class="main__btn btn btn_border js-popup-open"
-                  href="#" data-effect="mfp-zoom-in">Rencanakan Diskusi</a></div>
+                  href="#" onclick="window.chaport.q('open'); return false;" data-effect="mfp-zoom-in">Rencanakan
+                  Diskusi</a></div>
             </div>
             <div class="main__preview"><img class="main__pic" src="assets/about-us/img/main-pic.png" alt=""></div>
           </div>
@@ -290,27 +296,27 @@
               <div class="indicators__item" data-aos="animation-scale-y">
                 <div class="indicators__icon"><img class="indicators__pic" src="assets/about-us/img/profile.svg" alt="">
                 </div>
-                <div class="indicators__counter">3,000,000+</div>
+                <div class="indicators__counter">10+</div>
                 <div class="indicators__info info">Pengguna aktif harian</div>
               </div>
               <div class="indicators__item" data-aos="animation-scale-y" data-aos-delay="150">
                 <div class="indicators__icon"><img class="indicators__pic" src="assets/about-us/img/task.svg" alt="">
                 </div>
-                <div class="indicators__counter">10,090,000+</div>
+                <div class="indicators__counter">103</div>
                 <div class="indicators__info info">Tugas diselesaikan</div>
               </div>
               <div class="indicators__item" data-aos="animation-scale-y">
                 <div class="indicators__icon"><img class="indicators__pic" src="assets/about-us/img/business.svg"
                     alt="">
                 </div>
-                <div class="indicators__counter">12,500+</div>
+                <div class="indicators__counter">25+</div>
                 <div class="indicators__info info">Berbagai background </div>
               </div>
               <div class="indicators__item" data-aos="animation-scale-y" data-aos-delay="150">
                 <div class="indicators__icon"><img class="indicators__pic" src="assets/about-us/img/positive.svg"
                     alt="">
                 </div>
-                <div class="indicators__counter">275,000+</div>
+                <div class="indicators__counter">62+</div>
                 <div class="indicators__info info">Ulasan Positif</div>
               </div>
             </div>
@@ -325,7 +331,8 @@
                 <div class="trial__info info">Mulai sekarang dan daftar. Tidak ada kredit yang diperlukan untuk
                   bergabung.
                   Buruan! </div>
-              </div><a class="trial__btn btn btn_purple js-popup-open" href="#" data-effect="mfp-zoom-in"><svg
+              </div><a class="trial__btn btn btn_purple js-popup-open" href="#"
+                onclick="window.chaport.q('open'); return false;" data-effect="mfp-zoom-in"><svg
                   class="icon icon-arrow-right" id="icon-arrow-right" viewBox="0 0 8 14">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M.293.293a1 1 0 0 0 0 1.414L5.586 7 .293 12.293a1 1 0 1 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 0z">
@@ -659,7 +666,7 @@
                   </svg></div>
                 <div class="footer__menu js-footer-menu">
                   <a class="footer__link" href="contact-us.html">Contact us</a>
-                  <a class="footer__link" href="#">Live Chat</a>
+                  <a class="footer__link" href="#" onclick="window.chaport.q('open'); return false;">Live Chat</a>
                   <a class="footer__link" href="terms.html">Terms of Service</a>
                   <a class="footer__link" href="privacy.html">Privacy & Policy</a>
                 </div>
@@ -671,10 +678,12 @@
                       d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
                   </svg></div>
                 <div class="footer__menu js-footer-menu">
-                  <a class="footer__link" href="#">Instagram</a>
-                  <a class="footer__link" href="#">Telegram</a>
-                  <a class="footer__link" href="#">Facebook</a>
-                  <a class="footer__link" href="#">Whatsapp</a>
+                  <a class="footer__link" href="https://www.instagram.com/jasatugascoid/" target="_blank">Instagram</a>
+                  <a class="footer__link" href="https://t.me/jasatugascoid" target="_blank">Telegram</a>
+                  <a class="footer__link" href="https://twitter.com/jasatugascoid" target="_blank">Twitter</a>
+                  <a class="footer__link"
+                    href="https://api.whatsapp.com/send/?phone=628137003300&text=Hai+JasaTugas%2C+bisa+bantu+saya+untuk+...&app_absent=0"
+                    target="_blank">Whatsapp</a>
                 </div>
               </div>
             </div>
@@ -682,7 +691,7 @@
               <!-- <a class="footer__company" href="https://ui8.net/" target="_blank"><img
                   class="footer__pic" src="assets/landing-page/img/ui8.svg" alt=""></a> -->
               <div class="footer__copyright">© 2020, JasaTugas.</div><a class="footer__scroll js-link-scroll"
-                href="#header">
+                href="#main">
                 <div class="footer__icon"><img class="footer__pic" src="assets/landing-page/img/scroll.svg" alt="">
                 </div>
                 <div class="footer__text">Back to top</div>

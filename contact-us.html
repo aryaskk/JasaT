@@ -7,15 +7,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
    <meta name="format-detection" content="telephone=no">
-   <link rel="apple-touch-icon" sizes="180x180" href="assets/contact-us/img/apple-touch-icon.png">
+   <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/contact-us/img/apple-touch-icon.png"> -->
    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon.png">
    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon.png">
-   <link rel="manifest" href="assets/contact-us/img/site.webmanifest">
-   <link rel="mask-icon" href="assets/contact-us/img/safari-pinned-tab.svg" color="#5bbad5">
+   <!-- <link rel="manifest" href="assets/contact-us/img/site.webmanifest"> -->
+   <!-- <link rel="mask-icon" href="assets/contact-us/img/safari-pinned-tab.svg" color="#5bbad5"> -->
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
-   <meta name="description" content="Production-ready Portfolio and Case Study Template for Design Agencies">
-   <meta name="twitter:card" content="summary">
+   <meta name="description" content="Kemudahan pengelolan semua tugas dengan kami Jasa Tugas">
+   <!-- <meta name="twitter:card" content="summary">
    <meta name="twitter:site" content="@ui8">
    <meta name="twitter:title" content="Folio Agency">
    <meta name="twitter:description" content="Production-ready Portfolio and Case Study Template for Design Agencies">
@@ -27,10 +27,15 @@
    <meta property="og:image" content="https://ui8-folio-agency.herokuapp.com/img/fb-og-image.jpg">
    <meta property="og:description" content="Production-ready Portfolio and Case Study Template for Visual Designers">
    <meta property="og:site_name" content="Folio Agency">
-   <meta property="fb:admins" content="132951670226590">
+   <meta property="fb:admins" content="132951670226590"> -->
    <link rel="stylesheet" media="all" href="assets/contact-us/css/app.css">
    <link rel="stylesheet" media="all" href="assets/contact-us/css/app2.css">
    <link rel="stylesheet" media="all" href="assets/img/heafoo.css">
+   <style>
+      .footer.js-footer {
+         margin-top: -100px;
+      }
+   </style>
    <script>
       var viewportmeta = document.querySelector('meta[name="viewport"]');
       if (viewportmeta) {
@@ -51,7 +56,8 @@
       <div class="case">
          <div class="header js-header" id="header">
             <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
-                  class="header__logo" href="#"><img class="header__pic" src="assets/img/logo-dark.png" alt=""></a>
+                  class="header__logo" href="index.html"><img class="header__pic" src="assets/img/logo-dark.png"
+                     alt=""></a>
                <div class="header__wrap js-header-wrap">
                   <nav class="header__nav">
                      <a class="header__item" href="index.html">Home</a>
@@ -65,7 +71,7 @@
             </div>
             <div class="header__bg js-header-bg"></div>
          </div>
-         <div class="case__center center">
+         <div class="case__center center" id="case">
             <div class="case__wrap">
                <!-- <div class="case__arrows arrows" data-aos="animation-scale-y"><a class="arrows__prev" href="#"><svg
                         class="icon icon-arrow-prev">
@@ -73,8 +79,8 @@
                      </svg></a><a class="arrows__next" href="#"><svg class="icon icon-arrow-next">
                         <use xlink:href="assets/contact-us/img/sprite.svg#icon-arrow-next"></use>
                      </svg></a></div> -->
-               <div class="case__category category" data-aos="animation-scale-y" data-aos-delay="200">Featured Product
-               </div>
+               <!-- <div class="case__category category" data-aos="animation-scale-y" data-aos-delay="200">Featured Product
+               </div> -->
                <h1 class="case__title title title_big" data-aos="animation-scale-y" data-aos-delay="400">Speak Up<span
                      class="title__color">.</span></h1>
                <div class="case__info h6" data-aos="animation-scale-y" data-aos-delay="600">Diskusi dan Temukan Solusi!
@@ -135,7 +141,7 @@
                            <div class="contacts__text">
                               <p>Yogyakarta</p>
                            </div>
-                        </div><a class="contacts__line" href="tel:+441236547890">
+                        </div><a class="contacts__line" href="tel:+6282137003300">
                            <div class="contacts__icon">
                               <svg class="icon icon-phone" viewBox="0 0 17 18">
                                  <path fill-rule="evenodd" clip-rule="evenodd"
@@ -144,10 +150,10 @@
                            <div class="contacts__text">+62 821 3700 3300 </div>
                         </a>
                      </div>
-                     <form class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
+                     <form class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200" method="POST" action="script/send-email.php">
                         <div class="contacts__field field">
                            <div class="field__wrap"><input class="field__input" type="text" name="name"
-                                 placeholder="Nama" />
+                                 placeholder="Nama" required/>
                               <div class="field__icon">
                                  <svg class="icon icon-form" viewBox="0 0 17 18">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -158,7 +164,7 @@
                         </div>
                         <div class="contacts__field field">
                            <div class="field__wrap"><input class="field__input" type="email" name="email"
-                                 placeholder="nama@domain.com" />
+                                 placeholder="tugas@jasatugas.co.id" required/>
                               <div class="field__icon"><svg class="icon icon-form" style="max-width: 24px;"
                                     viewBox="0 0 17 17">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -168,15 +174,13 @@
                         </div>
                         <div class="contacts__field field">
                            <div class="field__wrap">
-                              <select class="field__select" name="question">
-                                 <option>Pilih Kategori</option>
-                                 <option>SD</option>
-                                 <option>SMP</option>
-                                 <option>SMA</option>
-                                 <option>D1</option>
-                                 <option>D2</option>
-                                 <option>D3</option>
-                                 <option>S1</option>
+                              <select class="field__select" name="question" required>
+                                 <option>Pertanyaan</option>
+                                 <option>Event atau Promosi</option>
+                                 <option>Pembayaran</option>
+                                 <option>Kritik dan Saran</option>
+                                 <option>Request Order</option>
+                                 <option>Lainnya</option>
                               </select>
                               <div class="field__icon">
                                  <svg class="icon icon-form" viewBox="0 0 12 18">
@@ -188,7 +192,7 @@
                         </div>
                         <div class="contacts__field field field_textarea">
                            <div class="field__wrap"><textarea class="field__textarea" name="message"
-                                 placeholder="Masukkan deskripsi pesan"></textarea>
+                                 placeholder="Masukkan deskripsi pesan" required></textarea>
                               <div class="field__icon">
                                  <svg class="icon icon-form" viewBox="0 0 18 18">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -198,7 +202,7 @@
                            </div>
                         </div>
                         <div class="contacts__btn">
-                           <button class="btn2 btn_purple">
+                           <button class="btn2 btn_purple" type="submit" >
                               <span class="btn__text">Kirim Sekarang</span>
                               <svg class="icon icon-arrow-next" viewBox="0 0 22 16">
                                  <path fill-rule="evenodd" clip-rule="evenodd"
@@ -210,7 +214,7 @@
                   </div>
                   <div class="contacts__category h5">Let’s connect</div>
                   <div class="contacts__social">
-                     <div class="contacts__box" data-aos="animation-translate-y"><a class="contacts__link" href="#">
+                     <div class="contacts__box" data-aos="animation-translate-y"><a class="contacts__link" href="https://www.instagram.com/jasatugascoid/" target="_blank">
                            <svg class="icon icon-instagram" viewBox="0 0 16 16">
                               <circle cx="12.145" cy="3.892" r=".96" />
                               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -221,16 +225,12 @@
                            <div class="contacts__text">Instagram</div>
                         </a></div>
                      <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="150"><a
-                           class="contacts__link" href="#">
-                           <svg class="icon icon-instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                              viewBox="0 0 24 24">
-                              <path
-                                 d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
-                           </svg>
-                           <div class="contacts__text">Facebook</div>
+                           class="contacts__link" href="https://twitter.com/jasatugascoid" target="_blank">
+                           <svg class="icon icon-instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>                           
+                           <div class="contacts__text">Twitter</div>
                         </a></div>
                      <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="300"><a
-                           class="contacts__link" href="#"><svg class="icon icon-instagram"
+                           class="contacts__link" href="https://api.whatsapp.com/send/?phone=628137003300&text=Hai+JasaTugas%2C+bisa+bantu+saya+untuk+...&app_absent=0" target="_blank"><svg class="icon icon-instagram"
                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                               <path
                                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
@@ -238,7 +238,7 @@
                            <div class="contacts__text">Whatsapp</div>
                         </a></div>
                      <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="450"><a
-                           class="contacts__link" href="#">
+                           class="contacts__link" href="https://t.me/jasatugascoid">
                            <svg class="icon icon-instagram" id="regular" enable-background="new 0 0 24 24" height="512"
                               viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -293,7 +293,7 @@
                      </svg></div>
                   <div class="footer__menu js-footer-menu">
                      <a class="footer__link" href="contact-us.html">Contact us</a>
-                     <a class="footer__link" href="#">Live Chat</a>
+                     <a class="footer__link" href="#" onclick="window.chaport.q('open'); return false;">Live Chat</a>
                      <a class="footer__link" href="terms.html">Terms of Service</a>
                      <a class="footer__link" href="privacy.html">Privacy & Policy</a>
                   </div>
@@ -305,10 +305,10 @@
                            d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
                      </svg></div>
                   <div class="footer__menu js-footer-menu">
-                     <a class="footer__link" href="#">Instagram</a>
-                     <a class="footer__link" href="#">Telegram</a>
-                     <a class="footer__link" href="#">Facebook</a>
-                     <a class="footer__link" href="#">Whatsapp</a>
+                     <a class="footer__link" href="https://www.instagram.com/jasatugascoid/" target="_blank">Instagram</a>
+                     <a class="footer__link" href="https://t.me/jasatugascoid" target="_blank">Telegram</a>
+                     <a class="footer__link" href="https://twitter.com/jasatugascoid" target="_blank">Twitter</a>
+                     <a class="footer__link" href="https://api.whatsapp.com/send/?phone=628137003300&text=Hai+JasaTugas%2C+bisa+bantu+saya+untuk+...&app_absent=0" target="_blank">Whatsapp</a>
                   </div>
                </div>
             </div>
@@ -316,7 +316,7 @@
                <!-- <a class="footer__company" href="https://ui8.net/" target="_blank"><img
                      class="footer__pic" src="assets/landing-page/img/ui8.svg" alt=""></a> -->
                <div class="footer__copyright">© 2020, JasaTugas.</div><a class="footer__scroll js-link-scroll"
-                  href="#header">
+                  href="#case">
                   <div class="footer__icon"><img class="footer__pic" src="assets/landing-page/img/scroll.svg" alt="">
                   </div>
                   <div class="footer__text">Back to top</div>
