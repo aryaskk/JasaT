@@ -1,0 +1,231 @@
+/* MODAL WELCOME */
+
+#bite-24 .modal-content {
+  padding: 26px 20px 47px;
+  background: rgba(37, 88, 220, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(37, 88, 220, 1) 0%,
+    rgba(66, 23, 158, 1) 100%
+  );
+  background: -webkit-gradient(
+    top,
+    bottom,
+    color-stop(0%, rgba(37, 88, 220, 1)),
+    color-stop(100%, rgba(66, 23, 158, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(37, 88, 220, 1) 0%,
+    rgba(66, 23, 158, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(37, 88, 220, 1) 0%,
+    rgba(66, 23, 158, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(37, 88, 220, 1) 0%,
+    rgba(66, 23, 158, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(37, 88, 220, 1) 0%,
+    rgba(66, 23, 158, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2558DC', endColorstr='#42179E', GradientType=1);
+}
+
+#bite-24 .popup-title {
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.1px;
+  color: #0f0f0f;
+  margin-bottom: 24px;
+}
+
+#bite-24 .popup-text {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  margin-bottom: 39px;
+}
+
+#bite-24 .popup-text b {
+  font-weight: 700;
+}
+
+#bite-24 .btn {
+  height: 60px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #f37575;
+  font-size: 21px;
+}
+
+#bite-24 .btn:hover {
+  color: #fff;
+  background-color: #ff9797;
+}
+
+#bite-24 .modal-header img {
+  width: 100%;
+}
+
+/* MODAL NOTICE */
+
+#bite-55 .modal-content {
+  background-color: #dd6a39;
+  padding: 35px;
+}
+
+#bite-55 .popup-title {
+  line-height: 30px;
+  font-size: 22px;
+}
+
+#bite-55 .popup-text {
+  line-height: 22px;
+  font-size: 14px;
+}
+
+#bite-55 .btn-accept {
+  height: 40px;
+  background-color: #dd6a39;
+  color: white;
+  border: 1px white solid;
+  font-size: 14px;
+  line-height: 1.07;
+}
+
+#bite-55 .btn-close {
+  height: 40px;
+  background-color: white;
+  color: #dd6a39;
+  font-size: 14px;
+  line-height: 1.07;
+}
+
+#bite-55 .btn-close:hover {
+  color: #dd6a39;
+  background-color: rgb(228, 228, 228);
+  border: 1px white solid;
+}
+
+#bite-55 .btn-accept:hover {
+  color: white;
+  background-color: #c25c30;
+}
+
+#bite-55 .space-between {
+  justify-content: space-between;
+}
+
+/* MODAL COOKIES */
+
+#bite-22 .modal-content {
+  padding: 26px 20px;
+  background-color: #f9db62;
+}
+
+#bite-22 .popup-title {
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.1px;
+  color: #0f0f0f;
+  margin-bottom: 24px;
+}
+
+#bite-22 .popup-text {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  margin-bottom: 18px;
+}
+
+#bite-22 .popup-text b {
+  font-weight: 700;
+}
+
+#bite-22 .btn {
+  height: 45px;
+  font-size: 14px;
+  background-color: #1625f2;
+}
+
+#bite-22 .btn:hover {
+  background-color: #4652f5;
+}
+
+#bite-22 .modal-header img {
+  width: 100%;
+}
+
+/* MODAL COUNTDOWN */
+
+#bite-46 .modal-content {
+  background-color: #1553d4;
+  padding: 35px 33px;
+}
+
+#bite-46 .popup-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#bite-46 .popup-text {
+  line-height: 38px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+#bite-46 .btn {
+  background-color: #1047b9;
+  color: rgba(255, 255, 255, 1);
+  height: 50px;
+}
+
+#bite-46 .btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#bite-46 .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#bite-46 .row-countdown{
+  border: 1px white solid;
+  border-radius: 12px;
+  height: 160px;
+}
+
+#bite-46 .col-countdown{
+  padding: 40px 0;
+  text-align: center;
+}
+
+#bite-46 .row-countdown .col-countdown:not(:last-child){
+  border-right: 1px solid white;
+}
+
+#bite-46 span.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#bite-46 span.unit {
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 575px) {
+  #bite-55 .modal-content {
+    text-align: center;
+  }
+
+  #bite-55 .modal-content {
+    padding: 40px;
+  }
+}

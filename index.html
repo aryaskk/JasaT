@@ -21,24 +21,25 @@
    <meta name="twitter:description" content="Kemudahan pengelolan semua tugas dengan kami Jasa Tugas">
    <meta name="twitter:creator" content="@ui8">
    <meta name="twitter:image" content="https://ui8-collab.herokuapp.com/img/twitter-card.jpg"> -->
-   <meta property="og:title" content="Jasa Tugas Professional & Stock Digital Template">   
+   <meta property="og:title" content="Jasa Tugas Professional & Stock Digital Template">
    <meta property="og:url" content="https://jasatugas.co.id/">
    <meta property="og:image" content="assets/img/icon.png">
    <meta property="og:description" content="Kemudahan pengelolan semua tugas dengan kami Jasa Tugas">
    <meta property="og:site_name" content="Jasa Tugas Professional & Stock Digital Template">
    <!-- <meta property="fb:admins" content="132951670226590"> -->
    <link rel="stylesheet" media="all" href="assets/landing-page/css/app.css">
-   <script>
-      var viewportmeta = document.querySelector('meta[name="viewport"]');
-      if (viewportmeta) {
-         if (screen.width < 375) {
-            var newScale = screen.width / 375;
-            viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
-         } else {
-            viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-         }
-      }
-   </script>
+   <!-- Modal -->
+   <link rel="stylesheet" media="all" href="assets/css/modal.css">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+   <!-- Animate CSS -->
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+   <!-- Bites Theme CSS -->
+   <link rel="stylesheet" href="assets/bites/css/bites-theme.css" />
    <style>
       .sticky {
          position: fixed;
@@ -55,14 +56,25 @@
          }
       }
    </style>
+   <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta) {
+         if (screen.width < 375) {
+            var newScale = screen.width / 375;
+            viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+         } else {
+            viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+         }
+      }
+   </script>
+   <script type="text/javascript" src="assets/js/cookies.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
    <div class="page">
       <div class="header js-header" id="header">
          <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a
-               class="header__logo" href="/"><img class="header__pic" src="assets/img/logo-dark.png"
-                  alt=""></a>
+               class="header__logo" href="/"><img class="header__pic" src="assets/img/logo-dark.png" alt=""></a>
             <div class="header__wrap js-header-wrap">
                <nav class="header__nav">
                   <a class="header__item" href="/">Home</a>
@@ -755,10 +767,13 @@
                            d="M13.69.277a1 1 0 0 1 .033 1.414l-6 6.278a1 1 0 0 1-1.446 0l-6-6.278A1 1 0 0 1 1.723.309L7 5.83 12.277.31a1 1 0 0 1 1.414-.033z" />
                      </svg></div>
                   <div class="footer__menu js-footer-menu">
-                     <a class="footer__link" href="https://www.instagram.com/jasatugascoid/" target="_blank">Instagram</a>
+                     <a class="footer__link" href="https://www.instagram.com/jasatugascoid/"
+                        target="_blank">Instagram</a>
                      <a class="footer__link" href="https://t.me/jasatugascoid" target="_blank">Telegram</a>
                      <a class="footer__link" href="https://twitter.com/jasatugascoid" target="_blank">Twitter</a>
-                     <a class="footer__link" href="https://api.whatsapp.com/send/?phone=628137003300&text=Hai+JasaTugas%2C+bisa+bantu+saya+untuk+...&app_absent=0" target="_blank">Whatsapp</a>
+                     <a class="footer__link"
+                        href="https://api.whatsapp.com/send/?phone=628137003300&text=Hai+JasaTugas%2C+bisa+bantu+saya+untuk+...&app_absent=0"
+                        target="_blank">Whatsapp</a>
                   </div>
                </div>
             </div>
@@ -821,30 +836,51 @@
          </div>
       </div>
    </div>
+   <!-- MODAL WELCOME -->
+   <div class="modal fade position-center-center m-width-370" id="bite-24" bite-show="slideInUp"
+      bite-hide="slideOutDown">
+      <div class="modal-dialog animated fast">
+         <div class="modal-content bg-white text-center">
+            <div class="modal-header align-self-center">
+               <button type="button" class="close close-light" data-dismiss="modal"></button>
+               <img src="./assets/img/icon-modal.png" alt="" />
+            </div>
+            <div class="modal-body">
+               <div class="popup-title text-white">Hey 👋 Hunters</div>
+               <div class="popup-text text-white">
+                  Selamat datang di <b>JasaTugas</b>! <br>
+                  Buat dan selesaikan pekerjaan yang <br>
+                  menumpuk untuk fokus ke hal yang lebih <br>
+                  PENTING!
+               </div>
+               <button class="btn btn-link" id="btn-welcome" data-dismiss="modal">Tutup</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- MODAL COOKIES -->
+   <div class="modal fade position-bottom-left m-width-370" id="bite-22" bite-show="slideInUp" bite-hide="slideOutDown">
+      <div class="modal-dialog animated fast">
+         <div class="modal-content text-center">
+            <div class="modal-header align-self-center">
+               <button type="button" class="close close-dark" data-dismiss="modal"></button>
+               <img src="./assets/bites/images/warning.png" style="margin-bottom: 18px;" />
+            </div>
+            <div class="modal-body">
+               <div class="popup-title">Kami Menggunakan Cookies!</div>
+               <div class="popup-text">
+                  Situs web ini menggunakan cookie untuk memastikan Anda mendapatkan pengalaman terbaik di situs web
+                  kami.
+               </div>
+               <button class="btn btn-link b-radius-25 text-white" data-dismiss="modal" id="btn-cookies">Mengerti,
+                  Terimakasih!</button>
+            </div>
+         </div>
+      </div>
+   </div>
    <script src="assets/landing-page/js/app.js"></script>
    <script src="assets/landing-page/js/common.js"></script>
-   <!-- Begin of Chaport Live Chat code -->
-   <script type="text/javascript">
-      (function (w, d, v3) {
-         w.chaportConfig = { appId: '5fe6e1da84fdc91d1e398bcf' };
-         if (w.chaport) return;
-         v3 = w.chaport = {};
-         v3._q = [];
-         v3._l = {};
-         v3.q = function () {
-            v3._q.push(arguments)
-         };
-         v3.on = function (e, fn) {
-            if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn)
-         };
-         var s = d.createElement('script');
-         s.type = 'text/javascript';
-         s.async = true;
-         s.src = 'https://app.chaport.com/javascripts/insert.js';
-         var ss = d.getElementsByTagName('script')[0];
-         ss.parentNode.insertBefore(s, ss)
-      })(window, document); 
-   </script>
+   <script src="assets/js/chaport.js"></script>
    <script>
       window.onscroll = function () { myFunction() };
 
@@ -859,7 +895,10 @@
          }
       }
    </script>
-   <!-- End of Chaport Live Chat code -->
+   <!-- Bootstrap Bundle JS v.4.3.1 minified -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+   <!-- Bites JS -->
+   <script type="text/javascript" src="assets/bites/js/bites.js"></script>
 </body>
 
 </html>

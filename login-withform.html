@@ -28,6 +28,17 @@
   <meta property="og:site_name" content="Jasa Tugas Professional & Stock Digital Template">
   <!-- <meta property="fb:admins" content="132951670226590"> -->
   <link rel="stylesheet" media="all" href="assets/landing-page/css/app.css">
+  <link rel="stylesheet" media="all" href="assets/css/modal.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" type="text/css"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <!-- Bites Theme CSS -->
+  <link rel="stylesheet" href="assets/bites/css/bites-theme.css" />
   <script>
     var viewportmeta = document.querySelector('meta[name="viewport"]');
     if (viewportmeta) {
@@ -38,6 +49,7 @@
         viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
       }
     }
+    $("#bite-46").modal('show');
   </script>
 </head>
 
@@ -98,31 +110,46 @@
       </div>
     </div>
   </div>
+  <!-- MODAL COUNTDOWN -->
+  <div class="modal fade position-center-center m-width-670" id="bite-46" bite-show="slideInDown"
+    bite-hide="slideOutUp">
+    <div class="modal-dialog animated fast">
+      <div class="modal-content">
+        <div class="modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="popup-title text-white mb-3 text-center">Coming Soon!</div>
+          <div class="row row-countdown text-white mb-3">
+            <div class="col-3 col-countdown"><span class="time" id="day">60</span><br><span class="unit">Hari</span>
+            </div>
+            <div class="col-3 col-countdown"><span class="time" id="hour">60</span><br><span class="unit">Jam</span>
+            </div>
+            <div class="col-3 col-countdown"><span class="time" id="minute">60</span><br><span class="unit">Menit</span>
+            </div>
+            <div class="col-3 col-countdown"><span class="time" id="second">60</span><br><span class="unit">Detik</span>
+            </div>
+          </div>
+          <p class="popup-text text-white mb-4 text-center">Mohon maaf sistem Dashboard masih dalam tahap Pengembangan
+            🙏
+          </p>
+          <button class="btn btn-block font-weight-bold" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div> 
   <script src="assets/landing-page/js/app.js"></script>
   <script src="assets/landing-page/js/common.js"></script>
-  <!-- Begin of Chaport Live Chat code -->
-  <script type="text/javascript">
-    (function (w, d, v3) {
-      w.chaportConfig = { appId: '5fe6e1da84fdc91d1e398bcf' };
-      if (w.chaport) return;
-      v3 = w.chaport = {};
-      v3._q = [];
-      v3._l = {};
-      v3.q = function () {
-        v3._q.push(arguments)
-      };
-      v3.on = function (e, fn) {
-        if (!v3._l[e]) v3._l[e] = []; v3._l[e].push(fn)
-      };
-      var s = d.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://app.chaport.com/javascripts/insert.js';
-      var ss = d.getElementsByTagName('script')[0];
-      ss.parentNode.insertBefore(s, ss)
-    })(window, document); 
+  <script src="assets/js/chaport.js"></script>
+   
+   
+   <!-- Bootstrap Bundle JS v.4.3.1 minified -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+   <!-- Bites JS -->
+   <script type="text/javascript" src="assets/bites/js/bites.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script>
+    $("#bite-46").modal('show');
   </script>
-  <!-- End of Chaport Live Chat code -->
 </body>
 
 </html>
