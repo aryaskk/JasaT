@@ -2526,7 +2526,7 @@ html.no-scroll {
 
 body {
   min-width: 375px;
-  background: #fafbff;
+  /* background: #fafbff; */
   /* font-family: "Public Sans", sans-serif; */
   font-family: 'SF Pro Display', sans-serif;
   font-size: 16px;
